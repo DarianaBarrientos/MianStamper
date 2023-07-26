@@ -82,7 +82,7 @@ nav {
     }
 
     nav {
-        height: 100px;
+        height: 80px;
     }
 
     .bar-btn {
@@ -104,6 +104,7 @@ nav {
         line-height: 100px;
         margin: 0 20px;
         transition: none;
+        padding-top: 10px;
     }
 
     .nav-menu li a {
@@ -147,6 +148,40 @@ h3 {
     background-position: 90%;
 }
 
+.nav__otras-paginas {
+    background-image: none;
+    background-color: #ffc6c67a;
+}
+
+.miniheader {
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.miniheader li {
+    padding-top: 30px;
+    color: #420000;
+}
+
+.miniheader li a {
+    text-decoration: none;
+    color: #dc2f36;
+}
+
+.miniheader li a:hover {
+    color: #ffc6c6;
+}
+
+.miniheader__info::after {
+    content: "/";
+    padding: 10px;
+}
+
+.productos__titulo {
+    padding-top: 5px;
+}
 
 /*main*/
 
