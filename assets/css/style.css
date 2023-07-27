@@ -179,7 +179,7 @@ h3 {
     padding: 10px;
 }
 
-.productos__titulo {
+.miniheader__titulo {
     padding-top: 5px;
 }
 
@@ -296,6 +296,34 @@ h2 {
     text-align: center;
     width: 500px;
     margin: 20px;
+}
+
+.productos__espaciado {
+    margin-bottom: 70px;
+}
+
+.productos__container img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px #ffc6c6a8;
+}
+
+.productos__info p {
+    color: #420000;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.productos__precio p {
+    color: #420000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.productos__button {
+    background-color: #420000c6;
+    padding: 0 15px;
 }
 
 /*footer*/

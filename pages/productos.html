@@ -13,7 +13,7 @@
     </head>
     <body>
     
-        <header class="nav__otras-paginas">
+        <header id="header" class="nav__otras-paginas">
             <nav id="nav">
                 <div class="logo">
                     <a href="../index.html">
@@ -44,7 +44,7 @@
                     <li>productos</li>
                 </ul>
     
-                <h2 class="productos__titulo">PRODUCTOS</h2>
+                <h2 class="miniheader__titulo">PRODUCTOS</h2>
             </section>
             
             <section class="productos">
@@ -52,88 +52,127 @@
                     <div>
                         <img src="../assets/img/taza.png" alt="una taza">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>taza de ceramica</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
                 <article class="productos__container">
                     <div>
                         <img src="../assets/img/vaso.png" alt="vaso termico">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>vaso térmico</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
                 <article class="productos__container">
                     <div>
                         <img src="../assets/img/copa.png" alt="copa de champagne">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>copa de champagne</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
-                <article class="productos__container">
+                <article class="productos__container productos__espaciado">
                     <div>
                         <img src="../assets/img/gorra.png" alt="gorra">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>gorra (varios colores)</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
-                <article class="productos__container">
+                <article class="productos__container productos__espaciado">
                     <div>
                         <img src="../assets/img/remera.png" alt="remera">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>remera</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
-                <article class="productos__container">
+                <article class="productos__container productos__espaciado">
                     <div>
                         <img src="../assets/img/termo.png" alt="termo">
                     </div>
-                    <div>
+                    <div class="productos__info">
                         <p>termo térmico</p>
                     </div>
-                    <div>
+                    <div class="productos__precio">
                         <p>$$$$</p>
                     </div>
                     <div>
-                        <button  type="button" class="btn btn-secondary">comprar</button>
+                        <button  type="button" class="btn btn-secondary productos__button">comprar</button>
                     </div>
                 </article>
             </section>
     
         </main>
+        <footer>
+            <section class="footer container-fluid text-center">
+                <div class="footer__info row row-cols-3">
+                    <div class="footer__info--div col">
+                        <p class="footer--p">Términos y condiciones</p>
+                        <p class="footer--p privacidad">políticas de privacidad</p>
+                    </div>
+    
+                    <div class="footer__info--div col">
+                        <a href="#header">
+                            <img class="arrow" src="../assets/img/arrow.png" alt="flecha arriba">
+                        </a>
+                    </div>
+    
+                    <div id="redes" class="footer__info--div col">
+                        <a href="https://www.instagram.com/mianstamper/" target="_blank">
+                            <img id="redes" src="../assets/img/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img id="redes" src="../assets/img/tiktok.png" alt="tiktok">
+                        </a>
+                    </div>
+                    
+                    <div class="footer__info--div col">
+                        <p class="footer--p apartado">número de contacto</p>
+                        <p class="footer--p">11 5644-7527</p>
+                    </div>
+    
+                    <div class="footer__info--div col">
+                        <p class="footer--p apartado">©copyright</p>
+                    </div>
+    
+                    <div class="footer__info--div col">
+                        <p class="footer--p apartado">mail de contacto</p>
+                        <p class="footer--p">mianstamper@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
     
     </body>
