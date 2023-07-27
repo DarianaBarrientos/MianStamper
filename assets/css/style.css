@@ -331,6 +331,25 @@ h2 {
     padding: 0 15px;
 }
 
+/*css de muestras*/
+
+.muestras__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.muestras__img img {
+    margin: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px #ffc6c6a8;
+}
+
+.muestras__espaciado {
+    margin-bottom: 100px;
+}
+
 /*css sobre mi*/
 
 .container {
