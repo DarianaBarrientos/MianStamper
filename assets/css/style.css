@@ -331,6 +331,54 @@ h2 {
     padding: 0 15px;
 }
 
+/*css sobre mi*/
+
+.container {
+    background-color: #ffc6c67a;
+}
+
+.quiensoy__texto {
+    text-align: center;
+    color: #420000;
+    font-size: 18px;
+    text-shadow: 0 0 25px #420000;
+    padding: 0 80px;
+}
+
+.vision__texto {
+    text-align: center;
+    color: #420000;
+    font-size: 18px;
+    text-shadow: 0 0 25px #420000;
+    padding: 0 80px;
+    margin-bottom: 80px;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.valores__texto {
+    background-color: #420000bc;
+    padding: 10px;
+    color: #ffc6c6;
+    text-align: center;
+    width: 200px;
+    margin: 0 80px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 5px 5px ;
+    border-radius: 15px;
+}
+
+.quiensoy__img img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 10px #42000090 ;
+}
+
 /*css de contacto*/
 
 .contactate {
