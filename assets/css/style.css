@@ -20,7 +20,7 @@
 
 header {
     width: 100%;
-    background-image: url(../img/fondomian1.png);
+    background-image: url(../img/fondomian.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -90,6 +90,11 @@ nav {
 @media (min-width:720px) {
     .logo {
         margin-left: 50px;
+        
+    }
+
+    .logo img {
+        width: 100px;
     }
 
     nav {
@@ -249,9 +254,7 @@ h3 {
     justify-content: center;
 }
 
-.carousel-item {
-    width: 500px;
-}
+
 
 .destacado {
     background-color:#ffffff;
