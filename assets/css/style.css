@@ -285,6 +285,19 @@ h2 {
     }
 }
 
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos__container {
+    text-align: center;
+    width: 500px;
+    margin: 20px;
+}
+
 /*footer*/
 
 .footer {

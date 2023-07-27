@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mian Stamper</title>
-    <link rel="shortcut icon" href="../assets/img/logomianstamper.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-    <header>
-        <nav id="nav">
-            <span class="logo">
-               <a href="../index.html">
-                    <img src="../assets/img/logomianstamper.png" alt="logo">
-               </a> 
-            </span>
-
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="../pages/productos.html">productos</a></li>
-                <li><a href="../pages/muestras.html">muestras</a></li>
-                <li><a href="../pages/sobremi.html">sobre mi</a></li>
-                <li><a href="../pages/contacto.html">contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h3>productos</h3>
-    </main>
-
-    <footer>
-        <section class="footer">
-          
-            <div class="redes">
-                <p>Términos y condiciones políticas de privacidad</p>
-                <p>número de contacto 11 5644-7527</p>
-
-                <a href="https://www.instagram.com/mianstamper/" target="_blank">
-                    <img src="../assets/img/instagram.png" alt="instagram">
-                </a>
-                <a href="">
-                    <img src="../assets/img/tiktok.png" alt="tiktok">
-                </a>
-
-                <p>mail de contacto mianstamper@gmail.com</p>
-                <p>©copyright</p>
-            </div>
-        
-        </section>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mian Stamper</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="../assets/img/logomianstamper.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/style.css">
+    
+    </head>
+    <body>
+    
+        <header class="nav__otras-paginas">
+            <nav id="nav">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/img/logomianstamper.png" alt="logo">
+                    </a> 
+                </div>
+    
+                <input type="checkbox" name="check" id="check">
+                <label for="check" class="bar-btn">
+                    <img src="../assets/img/menu.png" alt="menu">
+                </label>
+    
+                <ul class="nav-menu">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../pages/productos.html">productos</a></li>
+                    <li><a href="../pages/muestras.html">muestras</a></li>
+                    <li><a href="../pages/sobremi.html">sobre mi</a></li>
+                    <li><a href="../pages/contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+    
+        <main>
+            <section>
+                <ul class="miniheader">
+                    <li class="miniheader__info"><a href="../index.html">inicio</a></li>
+                    <li>productos</li>
+                </ul>
+    
+                <h2 class="productos__titulo">PRODUCTOS</h2>
+            </section>
+            
+            <section class="productos">
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/taza.png" alt="una taza">
+                    </div>
+                    <div>
+                        <p>taza de ceramica</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/vaso.png" alt="vaso termico">
+                    </div>
+                    <div>
+                        <p>vaso térmico</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/copa.png" alt="copa de champagne">
+                    </div>
+                    <div>
+                        <p>copa de champagne</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/gorra.png" alt="gorra">
+                    </div>
+                    <div>
+                        <p>gorra (varios colores)</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/remera.png" alt="remera">
+                    </div>
+                    <div>
+                        <p>remera</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+                <article class="productos__container">
+                    <div>
+                        <img src="../assets/img/termo.png" alt="termo">
+                    </div>
+                    <div>
+                        <p>termo térmico</p>
+                    </div>
+                    <div>
+                        <p>$$$$</p>
+                    </div>
+                    <div>
+                        <button  type="button" class="btn btn-secondary">comprar</button>
+                    </div>
+                </article>
+            </section>
+    
+        </main>
+    
+    </body>
