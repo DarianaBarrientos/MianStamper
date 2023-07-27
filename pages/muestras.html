@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mian Stamper</title>
     <link rel="shortcut icon" href="../assets/img/logomianstamper.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        
 </head>
 <body>
-    <header>
+        
+    <header id="header" class="nav__otras-paginas">
         <nav id="nav">
-            <span class="logo">
-               <a href="../index.html">
+            <div class="logo">
+                <a href="../index.html">
                     <img src="../assets/img/logomianstamper.png" alt="logo">
-               </a> 
-            </span>
-
-            <ul>
+                </a> 
+            </div>
+        
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="bar-btn">
+                <img src="../assets/img/menu.png" alt="menu">
+            </label>
+        
+            <ul class="nav-menu">
                 <li><a href="../index.html">inicio</a></li>
                 <li><a href="../pages/productos.html">productos</a></li>
                 <li><a href="../pages/muestras.html">muestras</a></li>
@@ -25,30 +34,53 @@
                 <li><a href="../pages/contacto.html">contacto</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <main>
-        <h3>muestras</h3>
+        
+
+
     </main>
 
     <footer>
-        <section class="footer">
-          
-            <div class="redes">
-                <p>Términos y condiciones políticas de privacidad</p>
-                <p>número de contacto 11 5644-7527</p>
-
-                <a href="https://www.instagram.com/mianstamper/" target="_blank">
-                    <img src="../assets/img/instagram.png" alt="instagram">
-                </a>
-                <a href="">
-                    <img src="../assets/img/tiktok.png" alt="tiktok">
-                </a>
-
-                <p>mail de contacto mianstamper@gmail.com</p>
-                <p>©copyright</p>
-            </div>
+        <section class="footer container-fluid text-center">
+            <div class="footer__info row row-cols-3">
+                <div class="footer__info--div col">
+                    <p class="footer--p">Términos y condiciones</p>
+                    <p class="footer--p privacidad">políticas de privacidad</p>
+                </div>
         
+                <div class="footer__info--div col">
+                    <a href="#header">
+                        <img class="arrow" src="../assets/img/arrow.png" alt="flecha arriba">
+                    </a>
+                </div>
+        
+                <div id="redes" class="footer__info--div col">
+                    <a href="https://www.instagram.com/mianstamper/" target="_blank">
+                        <img id="redes" src="../assets/img/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img id="redes" src="../assets/img/tiktok.png" alt="tiktok">
+                    </a>
+                </div>
+                        
+                <div class="footer__info--div col">
+                    <p class="footer--p apartado">número de contacto</p>
+                    <p class="footer--p">11 5644-7527</p>
+                </div>
+        
+                <div class="footer__info--div col">
+                    <p class="footer--p apartado">©copyright</p>
+                </div>
+        
+                <div class="footer__info--div col">
+                    <p class="footer--p apartado">mail de contacto</p>
+                    <p class="footer--p">mianstamper@gmail.com</p>
+                </div>
+            </div>
         </section>
     </footer>
+        
 </body>
