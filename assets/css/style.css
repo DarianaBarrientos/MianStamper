@@ -5,6 +5,17 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: "inkfree" ;
+    src: url(../fonts/inkfree.TTF);
+}
+
+@font-face {
+    font-family: "mellyhonney";
+    src: url(../fonts/mellyhonney.otf);
+}
+
+
 /*header*/
 
 header {
@@ -148,6 +159,8 @@ h3 {
     background-position: 90%;
 }
 
+/*css de paginas secundarias*/
+
 .nav__otras-paginas {
     background-image: none;
     background-color: #ffc6c67a;
@@ -184,16 +197,6 @@ h3 {
 }
 
 /*main*/
-
-@font-face {
-    font-family: "inkfree" ;
-    src: url(../fonts/inkfree.TTF);
-}
-
-@font-face {
-    font-family: "mellyhonney";
-    src: url(../fonts/mellyhonney.otf);
-}
 
 
 
@@ -285,6 +288,8 @@ h2 {
     }
 }
 
+/*css de productos*/
+
 .productos {
     display: flex;
     flex-direction: row;
@@ -294,12 +299,12 @@ h2 {
 
 .productos__container {
     text-align: center;
-    width: 500px;
-    margin: 20px;
+    width: 300px;
+    margin: 50px;
 }
 
 .productos__espaciado {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .productos__container img {
@@ -324,6 +329,105 @@ h2 {
 .productos__button {
     background-color: #420000c6;
     padding: 0 15px;
+}
+
+/*css de contacto*/
+
+.contactate {
+    background-image: url(../img/decoracion.png);
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactate p {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    font-family: "mellyhonney";
+    font-size: 50px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: 
+    "nombre nombre"
+    "email email"
+    "numero numero"
+    "mensaje fecha"
+    "mensaje pregunta"
+    "boton boton";
+    grid-template-columns: 300px 300px;
+    row-gap: 30px;
+    margin: 80px 0;
+    justify-content: center;
+}
+
+.formulario__centro {
+    justify-self: center;
+}
+
+.formulario__estilo {
+    width: 500px;
+    height: 40px;
+    background-color: #ffc6c67a;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #dbaaaa7a;
+    padding: 20px;
+    color: #420000;
+}
+
+.formulario__mensaje--estilo {
+    width: 195px;
+    background-color: #ffc6c67a;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #dbaaaa7a;
+    border: 0;
+    padding: 20px;
+    color: #420000;
+}
+
+.radio {
+    accent-color: #420000;
+}
+
+.formulario__pregunta {
+    color: #420000;
+}
+
+.formulario__nombre {
+    grid-area: nombre;
+}
+
+.formulario__email {
+    grid-area: email;
+}
+
+.formulario__numero {
+    grid-area: numero;
+}
+
+.formulario__mensaje {
+    grid-area: mensaje;
+}
+
+.formulario__fecha {
+    grid-area: fecha;
+}
+
+.formulario__pregunta {
+    grid-area: pregunta;
+}
+
+.formulario__button {
+    grid-area: boton;
+    background-color: #dc2f35;
+    color: #ffffff;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 /*footer*/
