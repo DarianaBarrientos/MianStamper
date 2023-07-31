@@ -334,6 +334,16 @@ h2 {
     padding: 0 15px;
 }
 
+@media (max-width: 720px) {
+    .productos__container {
+        margin: 20px;
+    }
+
+    .productos__espaciado--ultimo {
+        margin-bottom: 100px;
+    }
+}
+
 /*css de muestras*/
 
 .muestras__container {
