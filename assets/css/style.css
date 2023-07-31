@@ -428,6 +428,13 @@ h2 {
     font-size: 50px;
 }
 
+@media (max-width: 720px) {
+    .contactate p {
+        font-size: 35px;
+        padding-top: 55px;
+    }
+}
+
 .formulario {
     display: grid;
     grid-template-areas: 
@@ -508,6 +515,34 @@ h2 {
     width: 100px;
     height: 50px;
     border-radius: 50%;
+}
+
+@media (max-width: 720px) {
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .formulario__estilo {
+        width: 330px;
+        padding: 20px;
+    }
+
+    .formulario__mensaje--estilo {
+        width: 330px;
+        padding: 15px;
+    }
+
+    .formulario__pregunta {
+        text-align: center;
+    }
+
+    .formulario__button {
+        align-self: center;
+    }
+
 }
 
 /*footer*/
