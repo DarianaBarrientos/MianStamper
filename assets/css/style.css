@@ -15,6 +15,18 @@
     src: url(../fonts/mellyhonney.otf);
 }
 
+body::-webkit-scrollbar {
+    width: 18px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(198, 198, 198, 0.535);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #420000;    /* color of the scroll thumb */       /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
+
 
 /*header*/
 
