@@ -1,1 +1,5 @@
 #ignora archivos del sistema wds
+Thumbs.db
+
+#ignora caché
+.sass-cache

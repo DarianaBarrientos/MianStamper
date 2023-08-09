@@ -374,17 +374,35 @@ h3 {
     margin-bottom: 100px;
 }
 
+@media (max-width: 720px) {
+    .muestras__container {
+        margin: 5px;
+    }
+
+    .muestras__espaciado {
+        margin-bottom: 5px;
+    }
+
+    .muestras__espaciado--ultimo {
+        margin-bottom: 100px;
+    }
+}
+
 /*css sobre mi*/
 
 .container {
     background-color: #ffc6c67a;
 }
 
+.container h2 {
+    margin-top: 50px;
+}
+
 .quiensoy__texto {
     text-align: center;
     color: #420000;
     font-size: 18px;
-    text-shadow: 0 0 25px #420000;
+    text-shadow: 0 0 35px #420000;
     padding: 0 80px;
     margin-top: 25px;
 }
@@ -393,7 +411,7 @@ h3 {
     text-align: center;
     color: #420000;
     font-size: 18px;
-    text-shadow: 0 0 25px #420000;
+    text-shadow: 0 0 35px #420000;
     padding: 0 80px;
     margin-bottom: 80px;
 }
@@ -408,12 +426,12 @@ h3 {
 .valores__texto {
     background-color: #420000bc;
     padding: 10px;
-    color: #ffc6c6;
+    color: #ffffff;
     text-align: center;
     width: 200px;
     margin: 0 80px;
     margin-bottom: 100px;
-    box-shadow: 0 0 5px 5px ;
+    box-shadow: 0 0 5px 5px #ffc6c67a;
     border-radius: 15px;
 }
 
@@ -421,6 +439,50 @@ h3 {
     width: 300px;
     border-radius: 15px;
     box-shadow: 0 0 10px 10px #420000bc ;
+}
+
+@media (max-width: 720px) {
+    .container {
+        background-color: #ffffff;
+    }
+
+    .quiensoy__texto {
+        font-size: 15px;
+        text-shadow: 0 0 45px #420000;
+        padding: 0 10px;
+        margin-top: 25px;
+        text-align: justify;
+    }
+
+    .quiensoy__img img {
+        width: 100px;
+        box-shadow: 0 0 5px 5px #420000bc ;
+        margin-top: 80px;
+    }
+
+    .vision__texto {
+        text-align:justify;
+        font-size: 15px;
+        text-shadow: 0 0 45px #420000;
+        padding: 0 50px;
+        margin-bottom: 20px;
+    }
+
+    .valores__texto {
+        text-align: center;
+        width: 130px;
+        margin: 0 15px;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .valores__titulo {
+        color: #ffc6c6;
+    }
+
+    .valores__texto--espaciado {
+        margin-bottom: 100px;
+    }
 }
 
 /*css de contacto*/
