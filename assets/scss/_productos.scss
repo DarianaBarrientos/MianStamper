@@ -1,3 +1,4 @@
+
 /*productos*/
 
 .productos {
@@ -23,7 +24,7 @@
 }
 
 .productos__info p {
-  color: #420000;
+  color: $primary-color ;
   font-size: 18px;
   font-weight: 500;
   padding-top: 10px;
@@ -31,7 +32,7 @@
 }
 
 .productos__precio p {
-  color: #420000;
+  color: $primary-color;
   font-weight: 500;
   margin-bottom: 5px;
 }

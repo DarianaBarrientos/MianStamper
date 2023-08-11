@@ -1,3 +1,4 @@
+
 /*sobre mi*/
 
 .container {
@@ -10,18 +11,24 @@
 
 .quiensoy__texto {
   text-align: center;
-  color: #420000;
+  color: $primary-color;
   font-size: 18px;
-  text-shadow: 0 0 35px #420000;
+  text-shadow: 0 0 35px $primary-color;
   padding: 0 80px;
   margin-top: 25px;
 }
 
+.quiensoy__img img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 10px #420000bc;
+}
+
 .vision__texto {
   text-align: center;
-  color: #420000;
+  color: $primary-color;
   font-size: 18px;
-  text-shadow: 0 0 35px #420000;
+  text-shadow: 0 0 35px $primary-color;
   padding: 0 80px;
   margin-bottom: 80px;
 }
@@ -45,12 +52,6 @@
   border-radius: 15px;
 }
 
-.quiensoy__img img {
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px 10px #420000bc;
-}
-
 @media (max-width: 720px) {
   .container {
     background-color: #ffffff;
@@ -58,7 +59,7 @@
 
   .quiensoy__texto {
     font-size: 15px;
-    text-shadow: 0 0 45px #420000;
+    text-shadow: 0 0 45px $primary-color;
     padding: 0 10px;
     margin-top: 25px;
     text-align: justify;
@@ -73,7 +74,7 @@
   .vision__texto {
     text-align: justify;
     font-size: 15px;
-    text-shadow: 0 0 45px #420000;
+    text-shadow: 0 0 45px $primary-color;
     padding: 0 50px;
     margin-bottom: 20px;
   }
@@ -87,7 +88,7 @@
   }
 
   .valores__titulo {
-    color: #ffc6c6;
+    color: $tertiary-color;
   }
 
   .valores__texto--espaciado {
