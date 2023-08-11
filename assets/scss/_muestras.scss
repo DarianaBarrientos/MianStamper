@@ -1,0 +1,32 @@
+/*muestras*/
+
+.muestras__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.muestras__img img {
+  margin: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 5px #ffc6c67a;
+}
+
+.muestras__espaciado {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 720px) {
+  .muestras__container {
+    margin: 5px;
+  }
+
+  .muestras__espaciado {
+    margin-bottom: 5px;
+  }
+
+  .muestras__espaciado--ultimo {
+    margin-bottom: 100px;
+  }
+}
