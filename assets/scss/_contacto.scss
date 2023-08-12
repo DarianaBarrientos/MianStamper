@@ -94,13 +94,34 @@
 
 .formulario__button {
   grid-area: boton;
-  background-color: $secondary-color;
-  color: #ffffff;
-  border: 0;
-  width: 100px;
-  height: 50px;
-  border-radius: 50%;
+
+    &__style {
+        background-color: $secondary-color;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 20px;
+        border: 0;
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        border-radius: 15px;
+        background: rgb(255,198,198);
+        background: rgb(255,198,198);
+        background: linear-gradient(180deg, rgba(255,198,198,0.9375) 0%, rgba(220,47,54,0.9236111111111112) 37%, rgba(112,0,0,0.9259259259259259) 100%);
+        transition: all .3s;
+
+        &:hover {
+            width: 125px;
+            height: 65px;
+            font-size: 25px;
+            background-image: none;
+            color: $secondary-color;
+            border: 3px solid $secondary-color;
+        }
+    }
 }
+
 
 @media (max-width: 720px) {
   .formulario {

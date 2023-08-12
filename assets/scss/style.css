@@ -62,6 +62,7 @@ nav {
   background: rgba(66, 0, 0, 0.737254902);
   text-align: center;
   transition: all 0.5s;
+  z-index: 3;
 }
 .nav-menu li {
   display: none;
@@ -566,12 +567,30 @@ h3 {
 
 .formulario__button {
   grid-area: boton;
+}
+.formulario__button__style {
   background-color: #dc2f36;
   color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
   border: 0;
   width: 100px;
   height: 50px;
-  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  background: rgb(255, 198, 198);
+  background: rgb(255, 198, 198);
+  background: linear-gradient(180deg, rgba(255, 198, 198, 0.9375) 0%, rgba(220, 47, 54, 0.9236111111) 37%, rgba(112, 0, 0, 0.9259259259) 100%);
+  transition: all 0.3s;
+}
+.formulario__button__style:hover {
+  width: 125px;
+  height: 65px;
+  font-size: 25px;
+  background-image: none;
+  color: #dc2f36;
+  border: 3px solid #dc2f36;
 }
 
 @media (max-width: 720px) {
