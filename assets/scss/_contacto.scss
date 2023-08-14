@@ -33,95 +33,94 @@
   row-gap: 30px;
   margin: 80px 0;
   justify-content: center;
-}
 
-.formulario__centro {
-  justify-self: center;
-}
+  &__centro {
+    justify-self: center;
+  }
 
-.formulario__estilo {
-  width: 500px;
-  height: 40px;
-  background-color: #ffc6c67a;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 5px #dbaaaa7a;
-  padding: 20px;
-  color: $primary-color;
-}
+  &__estilo {
+    width: 500px;
+    height: 40px;
+    background-color: #ffc6c67a;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #dbaaaa7a;
+    padding: 20px;
+    color: $primary-color;
+  }
 
-.formulario__mensaje--estilo {
-  width: 195px;
-  background-color: #ffc6c67a;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 5px #dbaaaa7a;
-  border: 0;
-  padding: 20px;
-  color: $primary-color;
+  &__mensaje--estilo {
+    width: 195px;
+    background-color: #ffc6c67a;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #dbaaaa7a;
+    border: 0;
+    padding: 20px;
+    color: $primary-color;
+  }
+
+  &__pregunta {
+    color: $primary-color;
+  }
+
+  &__nombre {
+    grid-area: nombre;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__numero {
+    grid-area: numero;
+  }
+
+  &__mensaje {
+    grid-area: mensaje;
+  }
+
+  &__fecha {
+    grid-area: fecha;
+  }
+
+  &__pregunta {
+    grid-area: pregunta;
+  }
+
+  &__button {
+    grid-area: boton;
+  }
+
+  &__button__style {
+    background-color: $secondary-color;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    background: rgb(255,198,198);
+    background: rgb(255,198,198);
+    background: linear-gradient(180deg, rgba(255,198,198,0.9375) 0%, rgba(220,47,54,0.9236111111111112) 37%, rgba(112,0,0,0.9259259259259259) 100%);
+    transition: all .3s;
+
+    &:hover {
+      width: 125px;
+      height: 65px;
+      font-size: 25px;
+      background-image: none;
+      color: $secondary-color;
+      border: 3px solid $secondary-color;
+    }
+  }
 }
 
 .radio {
   accent-color: $primary-color;
 }
-
-.formulario__pregunta {
-  color: $primary-color;
-}
-
-.formulario__nombre {
-  grid-area: nombre;
-}
-
-.formulario__email {
-  grid-area: email;
-}
-
-.formulario__numero {
-  grid-area: numero;
-}
-
-.formulario__mensaje {
-  grid-area: mensaje;
-}
-
-.formulario__fecha {
-  grid-area: fecha;
-}
-
-.formulario__pregunta {
-  grid-area: pregunta;
-}
-
-.formulario__button {
-  grid-area: boton;
-
-    &__style {
-        background-color: $secondary-color;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 20px;
-        border: 0;
-        width: 100px;
-        height: 50px;
-        margin-top: 20px;
-        margin-bottom: 60px;
-        border-radius: 15px;
-        background: rgb(255,198,198);
-        background: rgb(255,198,198);
-        background: linear-gradient(180deg, rgba(255,198,198,0.9375) 0%, rgba(220,47,54,0.9236111111111112) 37%, rgba(112,0,0,0.9259259259259259) 100%);
-        transition: all .3s;
-
-        &:hover {
-            width: 125px;
-            height: 65px;
-            font-size: 25px;
-            background-image: none;
-            color: $secondary-color;
-            border: 3px solid $secondary-color;
-        }
-    }
-}
-
 
 @media (max-width: 720px) {
   .formulario {
@@ -129,23 +128,23 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-  }
 
-  .formulario__estilo {
-    width: 330px;
-    padding: 20px;
-  }
+    &__estilo {
+      width: 330px;
+      padding: 20px;
+    }
 
-  .formulario__mensaje--estilo {
-    width: 330px;
-    padding: 15px;
-  }
+    &__mensaje--estilo {
+      width: 330px;
+      padding: 15px;
+    }
 
-  .formulario__pregunta {
-    text-align: center;
-  }
+    &__pregunta {
+      text-align: center;
+    }
 
-  .formulario__button {
-    align-self: center;
+    &__button {
+      align-self: center;
+    }
   }
 }

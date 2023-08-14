@@ -7,91 +7,97 @@
   h2 {
     margin-top: 50px;
   }
-}
 
-.quiensoy__texto {
-  text-align: center;
-  color: $primary-color;
-  font-size: 18px;
-  text-shadow: 0 0 35px $primary-color;
-  padding: 0 80px;
-  margin-top: 25px;
-}
+  .quiensoy {
+    &__texto {
+      text-align: center;
+      color: $primary-color;
+      font-size: 18px;
+      text-shadow: 0 0 35px $primary-color;
+      padding: 0 80px;
+      margin-top: 25px;
+    }
 
-.quiensoy__img img {
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px 10px #420000bc;
-}
+    &__img img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 10px #420000bc;
+    }
+  }
 
-.vision__texto {
-  text-align: center;
-  color: $primary-color;
-  font-size: 18px;
-  text-shadow: 0 0 35px $primary-color;
-  padding: 0 80px;
-  margin-bottom: 80px;
-}
+  .vision__texto {
+    text-align: center;
+    color: $primary-color;
+    font-size: 18px;
+    text-shadow: 0 0 35px $primary-color;
+    padding: 0 80px;
+    margin-bottom: 80px;
+  }
 
-.valores {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .valores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.valores__texto {
-  background-color: #420000bc;
-  padding: 10px;
-  color: #ffffff;
-  text-align: center;
-  width: 200px;
-  margin: 0 80px;
-  margin-bottom: 100px;
-  box-shadow: 0 0 5px 5px #ffc6c67a;
-  border-radius: 15px;
+    &__texto {
+      background-color: #420000bc;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+      width: 200px;
+      margin: 0 80px;
+      margin-bottom: 100px;
+      box-shadow: 0 0 5px 5px #ffc6c67a;
+      border-radius: 15px;
+    }
+  }
 }
 
 @media (max-width: 720px) {
   .container {
     background-color: #ffffff;
-  }
 
-  .quiensoy__texto {
-    font-size: 15px;
-    text-shadow: 0 0 45px $primary-color;
-    padding: 0 10px;
-    margin-top: 25px;
-    text-align: justify;
-  }
+    .quiensoy {
+      &__texto {
+        font-size: 15px;
+        text-shadow: 0 0 45px $primary-color;
+        padding: 0 10px;
+        margin-top: 25px;
+        text-align: justify;
+      }
 
-  .quiensoy__img img {
-    width: 100px;
-    box-shadow: 0 0 5px 5px #420000bc;
-    margin-top: 80px;
-  }
+      &__img img {
+        width: 100px;
+        box-shadow: 0 0 5px 5px #420000bc;
+        margin-top: 80px;
+      }
+    }
 
-  .vision__texto {
-    text-align: justify;
-    font-size: 15px;
-    text-shadow: 0 0 45px $primary-color;
-    padding: 0 50px;
-    margin-bottom: 20px;
-  }
+    .vision__texto {
+      text-align: justify;
+      font-size: 15px;
+      text-shadow: 0 0 45px $primary-color;
+      padding: 0 50px;
+      margin-bottom: 20px;
+    }
 
-  .valores__texto {
-    text-align: center;
-    width: 130px;
-    margin: 0 15px;
-    margin-bottom: 25px;
-    font-size: 15px;
-  }
+    .valores {
+      &__texto {
+      text-align: center;
+      width: 130px;
+      margin: 0 15px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      }
 
-  .valores__titulo {
-    color: $tertiary-color;
-  }
+      &__titulo {
+      color: $tertiary-color;
+      }
 
-  .valores__texto--espaciado {
-    margin-bottom: 100px;
+      &__texto--espaciado {
+        margin-bottom: 100px;
+      }
+    }
   }
 }
