@@ -10,6 +10,13 @@
     margin: 40px;
     border-radius: 15px;
     box-shadow: 0 0 5px 5px #ffc6c67a;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+
+    &:hover{
+      -webkit-box-shadow: 10px 10px 14px 2px $primary-color;
+      box-shadow: 10px 10px 14px 2px $primary-color;
+    }
   }
 
   &__espaciado {

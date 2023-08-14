@@ -349,6 +349,10 @@ h3 {
   margin: 40px;
   border-radius: 15px;
   box-shadow: 0 0 5px 5px rgba(255, 198, 198, 0.4784313725);
+  transition: 0.3s linear;
+}
+.muestras__img img:hover {
+  box-shadow: 10px 10px 14px 2px #420000;
 }
 .muestras__espaciado {
   margin-bottom: 100px;
