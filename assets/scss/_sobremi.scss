@@ -26,19 +26,13 @@
   }
 
   .vision__texto {
-    text-align: center;
-    color: $primary-color;
-    font-size: 18px;
-    text-shadow: 0 0 35px $primary-color;
-    padding: 0 80px;
+    @extend .quiensoy__texto;
     margin-bottom: 80px;
+    margin-top: 0px
   }
 
   .valores {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include containers-row;
 
     &__texto {
       background-color: #420000bc;
@@ -62,7 +56,7 @@
       &__texto {
         font-size: 15px;
         text-shadow: 0 0 45px $primary-color;
-        padding: 0 10px;
+        padding: 0 16px;
         margin-top: 25px;
         text-align: justify;
       }
@@ -75,9 +69,7 @@
     }
 
     .vision__texto {
-      text-align: justify;
-      font-size: 15px;
-      text-shadow: 0 0 45px $primary-color;
+      margin-top: 0px;
       padding: 0 50px;
       margin-bottom: 20px;
     }

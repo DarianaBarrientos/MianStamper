@@ -356,9 +356,19 @@ h3 {
   }
 }
 
+/*mixins*/
+
+@mixin containers-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /*imports*/
 
 @import "productos";
 @import "muestras";
 @import "sobremi";
 @import "contacto";
+

@@ -3,10 +3,7 @@
 
 .muestras {
   &__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include containers-row;
   }
 
   &__img img {

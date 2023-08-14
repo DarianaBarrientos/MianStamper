@@ -291,6 +291,7 @@ h3 {
     padding-top: 20px;
   }
 }
+/*mixins*/
 /*imports*/
 /*productos*/
 .productos {
@@ -371,7 +372,7 @@ h3 {
 .container h2 {
   margin-top: 50px;
 }
-.container .quiensoy__texto {
+.container .quiensoy__texto, .container .vision__texto {
   text-align: center;
   color: #420000;
   font-size: 18px;
@@ -385,12 +386,8 @@ h3 {
   box-shadow: 0 0 10px 10px rgba(66, 0, 0, 0.737254902);
 }
 .container .vision__texto {
-  text-align: center;
-  color: #420000;
-  font-size: 18px;
-  text-shadow: 0 0 35px #420000;
-  padding: 0 80px;
   margin-bottom: 80px;
+  margin-top: 0px;
 }
 .container .valores {
   display: flex;
@@ -414,10 +411,10 @@ h3 {
   .container {
     background-color: #ffffff;
   }
-  .container .quiensoy__texto {
+  .container .quiensoy__texto, .container .vision__texto {
     font-size: 15px;
     text-shadow: 0 0 45px #420000;
-    padding: 0 10px;
+    padding: 0 16px;
     margin-top: 25px;
     text-align: justify;
   }
@@ -427,9 +424,7 @@ h3 {
     margin-top: 80px;
   }
   .container .vision__texto {
-    text-align: justify;
-    font-size: 15px;
-    text-shadow: 0 0 45px #420000;
+    margin-top: 0px;
     padding: 0 50px;
     margin-bottom: 20px;
   }
@@ -490,9 +485,9 @@ h3 {
 .formulario__mensaje--estilo {
   width: 195px;
   background-color: rgba(255, 198, 198, 0.4784313725);
+  border: 0;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(219, 170, 170, 0.4784313725);
-  border: 0;
   padding: 20px;
   color: #420000;
 }

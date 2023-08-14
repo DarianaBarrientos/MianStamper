@@ -2,10 +2,7 @@
 /*productos*/
 
 .productos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include containers-row;
 
   &__container {
     text-align: center;

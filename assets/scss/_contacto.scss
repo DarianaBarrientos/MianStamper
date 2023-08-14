@@ -38,9 +38,7 @@
     justify-self: center;
   }
 
-  &__estilo {
-    width: 500px;
-    height: 40px;
+  @mixin contacto-estilo {
     background-color: #ffc6c67a;
     border: 0;
     border-radius: 10px;
@@ -49,14 +47,15 @@
     color: $primary-color;
   }
 
+  &__estilo {
+    width: 500px;
+    height: 40px;
+    @include contacto-estilo;
+  }
+
   &__mensaje--estilo {
     width: 195px;
-    background-color: #ffc6c67a;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #dbaaaa7a;
-    border: 0;
-    padding: 20px;
-    color: $primary-color;
+    @include contacto-estilo;
   }
 
   &__pregunta {
