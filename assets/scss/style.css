@@ -218,6 +218,15 @@ h2 {
   padding: 15px;
 }
 
+@media (max-width: 720px) {
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 15px;
+  }
+  .carousel-indicators button {
+    width: 15px !important;
+    height: 1px !important;
+  }
+}
 .destacado {
   padding: 20px;
   display: flex;
