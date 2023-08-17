@@ -273,6 +273,9 @@ h3 {
 .footer #redes {
   padding: 5px;
 }
+.footer a {
+  text-decoration: none;
+}
 
 @media (max-width: 720px) {
   .footer__info {
