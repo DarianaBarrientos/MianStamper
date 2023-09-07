@@ -8,11 +8,11 @@
 /*fonts*/
 @font-face {
   font-family: "inkfree";
-  src: url(../fonts/inkfree.TTF);
+  src: url(../../assets/fonts/inkfree.TTF);
 }
 @font-face {
   font-family: "mellyhonney";
-  src: url(../fonts/mellyhonney.otf);
+  src: url(../../assets/fonts/mellyhonney.otf);
 }
 /*variables*/
 /*scroll*/
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 /*header*/
 header {
   width: 100%;
-  background-image: url(../img/fondomian.png);
+  background-image: url(../../assets/img/fondomian.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -460,7 +460,7 @@ h3 {
 }
 /*contacto*/
 .contactate {
-  background-image: url(../img/decoracion.png);
+  background-image: url(../../assets/img/decoracion.png);
   height: 180px;
   background-repeat: no-repeat;
   background-position: center;

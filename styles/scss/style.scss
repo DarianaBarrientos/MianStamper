@@ -9,12 +9,12 @@
 
 @font-face {
   font-family: "inkfree";
-  src: url(../fonts/inkfree.TTF);
+  src: url(../../assets/fonts/inkfree.TTF);
 }
 
 @font-face {
   font-family: "mellyhonney";
-  src: url(../fonts/mellyhonney.otf);
+  src: url(../../assets/fonts/mellyhonney.otf);
 }
 
 /*variables*/
@@ -45,7 +45,7 @@ body {
 
 header {
   width: 100%;
-  background-image: url(../img/fondomian.png);
+  background-image: url(../../assets/img/fondomian.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
