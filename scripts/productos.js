@@ -1,57 +1,42 @@
 //compras (carrito)
 //sumar => los precios
 
+const IVA = 1.21;
 
-let total = 0;
-const IVA = 1.21 
+const productos = [
+  { nombre: 'taza', precio: 1000 },
+  { nombre: 'vaso', precio: 1300 },
+  { nombre: 'copa', precio: 1500 },
+  { nombre: 'gorra', precio: 2000 },
+  { nombre: 'remera', precio: 3000 },
+  { nombre: 'termo', precio: 2500 },
+];
 
-let respuestaUsuario = prompt("¿Quieres realizar un pedido?");
+const carrito = [];
+let respuestaUsuario = prompt('¿Quieres realizar un pedido?');
 while (respuestaUsuario?.trim().toUpperCase() === "SI") {
-  let pedido = prompt("Ingrese el nombre del producto que desea agregar al carrito").trim().toLowerCase();
-  switch (pedido) {
-    case "taza":
-    total = total + 1000;
-    alert ("Haz agregado una taza de ceramica de $1000");
-    break;
+  let respuestaIngresada = prompt('Ingrese el nombre del producto que desea agregar al carrito')?.trim().toLowerCase();
 
-  case "vaso":
-    total = total + 1300;
-    alert ("Haz agregado un vaso termico de $1300");
-    break;
-
-  case "copa":
-    total = total + 1500;
-    alert ("Haz agregado una copa de champagne de $1500");
-    break;
-
-  default:
-    alert ("No haz agregado nada a tu carrito. Intentalo de nuevo");
-    break;
+  // Valida que exista el producto que ingreso la persona para no enviar un null al carrito
+  const existeProducto = productos.some((elemento) => elemento.nombre === respuestaIngresada?.trim().toLowerCase());
+  if (!existeProducto) {
+    alert('Ese producto no existe en nuestro stock');
+  }
+  else {
+  // Agregamos el producto seleccionado al carrito
+  carrito.push(productos.find((elemento) => elemento.nombre === respuestaIngresada?.trim().toLowerCase()));
+  console.log('carrito', carrito);
   }
 
-  pedido = prompt("¿Quieres realizar otro pedido?");
-  if (pedido?.trim().toUpperCase() === "SI") {
+  respuestaIngresada = prompt('¿Quieres realizar otro pedido?');
+  if (respuestaIngresada?.trim().toUpperCase() === "SI") {
     continue
   }
   else {
-    prompt("Su pedido ya fue hecho y el total es de $" + total + " sin IVA");
+    // Sacamos el total
+    const totalSinIVA = carrito.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
+    console.log('total sin IVA', totalSinIVA);
+    alert(`Su pedido ya fue hecho y el total con IVA es de $ ${totalSinIVA * IVA} \n ¡Gracias por su compra!`);
+    break;
   }
-
-  const sumaIva = (total, IVA) => {return total*IVA};
-  let totalConIva = sumaIva(total, IVA)
-
-  pedido = prompt ("¿Quieres saber tu total a pagar includo el IVA?");
-  if (pedido?.trim().toUpperCase() === "SI") {
-    prompt("Su pago final sería de $" + totalConIva);
-    break 
-  }
-  else {
-    prompt("Gracias por su compra!")
-    break
-  }
-}
-
-
-
-
-
+} 
