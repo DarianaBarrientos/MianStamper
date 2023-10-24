@@ -1,7 +1,7 @@
 //compras (carrito)
 //sumar => los precios
 
-const IVA = 1.21;
+/* const IVA = 1.21;
 
 const productos = [
   { nombre: 'taza', precio: 1000 },
@@ -39,4 +39,4 @@ while (respuestaUsuario?.trim().toUpperCase() === "SI") {
     alert(`Su pedido ya fue hecho y el total con IVA es de $ ${totalSinIVA * IVA} \n ¡Gracias por su compra!`);
     break;
   }
-} 
+}  */

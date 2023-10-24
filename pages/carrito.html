@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mian Stamper</title>
-    <meta name="description" content="Emprendedora independiente. Diseño y estampo tus ideas para generar nuevas sonrisas.">
-    <meta name="kaywords" content="stamper, diseño stamper, venta, productos stampados, personalizados, variedad">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/img/logomianstamper.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/scss/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    
 </head>
 <body>
 
     <!--navegacion-->
-
+        
     <header id="header" class="nav__otras-paginas">
         <nav>
             <div class="logo">
@@ -24,62 +23,83 @@
                     <img src="../assets/img/logomianstamper.png" alt="logo mian stamper">
                 </a> 
             </div>
-
+        
             <input type="checkbox" name="check" id="check">
             <label for="check" class="bar-btn">
                 <img src="../assets/img/menu.png" alt="menu">
             </label>
-
+        
             <ul class="nav-menu">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="../pages/productos.html">productos</a></li>
-                <li><a href="../pages/muestras.html">muestras</a></li>
-                <li><a href="../pages/sobremi.html">sobre mi</a></li>
-                <li><a href="../pages/contacto.html">contacto</a></li>
+                <li>
+                    <a class="btn-volver" href="../pages/productos.html">
+                       Volver <i class="bi bi-caret-right"></i> 
+                    </a>
+                </li>
             </ul>
         </nav>
-
+        
     </header>
 
-    <main>
+    <main class="main-carrito">
+        
+        <div class="carrito-container container row-cols-12">
+            <h2 class="carrito-titulo">Tu carrito</h2>
+            <p class="carrito-vacio">- Agrega un producto a tu carrito.</p>
+            <div class="carrito-productos">
 
-        <!--presentacion-->
+                <div class="carrito-producto">
+                    <img class="carrito-producto-imagen" src="../assets/img/taza.png" alt="">
+                    <div class="carrito-producto-titulo">
+                        <small>Producto</small>
+                        <h5>Taza de cerámica</h5>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$1000</p>
+                    </div>
+                    <button class="carrito-eliminar"><i class="bi bi-trash3"></i></button>
+                </div>
 
-        <article class="container">
-            <section class="row quiensoy">
-                <div class="col-12">
-                    <h2 class="titulo-quiensoy">¿Quién soy?</h2>
-                </div>
-                <div class="col-8 quiensoy__texto">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ab eveniet illo quam porro corrupti aperiam voluptate cumque iusto. Quidem harum voluptas ducimus magni ipsum nisi ipsa consequatur culpa e! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolore?</p>
-                </div>
-                <div class="col-4 quiensoy__img">
-                    <img src="../assets/img/mian.jpg" alt="autorretrato animado">
-                </div>
-            </section>
+                <div class="carrito-producto">
+                    <img class="carrito-producto-imagen" src="../assets/img/vaso.png" alt="">
+                    <div class="carrito-producto-titulo">
+                        <small>Producto</small>
+                        <h5>Vaso térmico</h5>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$1300</p>
+                    </div>
+                    <button class="carrito-eliminar"><i class="bi bi-trash3"></i></button>
 
-            <section class="row">
-                <div class="col-3">
-                    <h3>visión</h3>
                 </div>
-                <div class="col-12 vision__texto">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, molestias. Fugiat voluptatibus optio accusantium harum? Asperiores et repellat aliquam hic rem aspernatur cum, iste, repudiandae, perferendis recusandae nulla dolorum consequatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, officiis!</p>
-                </div>
-            </section>
 
-            <h3 class="valores__titulo">valores</h3>
-            <section class="valores">
-                <div class="valores__texto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sed?
+                <div class="carrito-acciones">
+                    <div class="carrito-accion-izquierda">
+                        <button class="carrito-accion-vaciar">Vaciar carrito</button>
+                    </div>
+
+                    <div class="carrito-accion-derecha">
+                        <div class="carrito-accion-total">
+                            <p>Total:</p>
+                            <p id="total">$2300</p>
+                        </div>
+                        <button class="carrito-accion-comprar">Comprar</button>
+                    </div>
                 </div>
-                <div class="valores__texto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sed?
-                </div>
-                <div class="valores__texto valores__texto--espaciado ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sed?
-                </div>
-            </section>
-        </article>
+
+            </div>
+        </div>
+
+
     </main>
 
     <!--footer-->
@@ -91,13 +111,13 @@
                     <p class="footer__p">Términos y condiciones</p>
                     <p class="footer__p privacidad">políticas de privacidad</p>
                 </div>
-    
+        
                 <div class="footer__info--div col">
                     <a href="#header">
                         <img class="footer__arrow" src="../assets/img/arrow.png" alt="flecha arriba">
                     </a>
                 </div>
-    
+        
                 <div id="redes" class="footer__info--div col">
                     <a href="https://www.instagram.com/mianstamper/" target="_blank">
                         <img id="redes" src="../assets/img/instagram.png" alt="instagram">
@@ -106,17 +126,17 @@
                         <img id="redes" src="../assets/img/tiktok.png" alt="tiktok">
                     </a>
                 </div>
-                    
+                        
                 <div class="footer__info--div col">
                     <p class="footer__p apartado">número de contacto</p>
                     <p class="footer__p">11 5644-7527</p>
                 </div>
-    
+        
                 <div class="footer__info--div col">
                     <p class="footer__p apartado">©copyright</p>
                     <p class="footer__p">Hecho por Dariana B.</p>
                 </div>
-    
+        
                 <div class="footer__info--div col">
                     <p class="footer__p apartado">mail de contacto</p>
                     <p class="footer__p">mianstamper@gmail.com</p>
@@ -124,5 +144,5 @@
             </div>
         </section>
     </footer>
-
+        
 </body>

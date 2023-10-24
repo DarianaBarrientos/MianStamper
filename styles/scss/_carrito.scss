@@ -1,0 +1,103 @@
+.main-carrito {
+    background-color: #ffc6c67a;
+    padding-bottom: 9rem;
+    padding-top: 1rem;
+    min-height: 700px;
+}
+
+.carrito-container {
+    background-color: white;  
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.carrito-titulo {
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.carrito-vacio {
+    color: $secondary-color;
+    margin-left: 20px;
+    display: none;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: right;
+    background-color: rgb(233, 233, 233);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: $primary-color;
+    margin: 20px;
+}
+
+.carrito-producto-titulo {
+    width: 200px;
+}
+
+.carrito-producto-imagen {
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.carrito-eliminar {
+    color: $secondary-color;
+    border: none;
+    background-color: transparent;
+    padding-right: 1rem;
+    width: 20px;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.carrito-accion-vaciar {
+    border: none;
+    background-color: rgb(233, 233, 233) ;
+    padding: 10px;
+    border-radius: 10px;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.carrito-accion-derecha {
+    display: flex;
+}
+
+.carrito-accion-total {
+    display: flex;
+    background-color: rgb(233, 233, 233) ;
+    padding: 10px;
+    color: $primary-color;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 44px;
+    gap: 1rem;
+}
+
+.carrito-accion-comprar {
+    border: none;
+    background-color: $primary-color ;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
