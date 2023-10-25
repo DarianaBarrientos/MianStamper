@@ -44,59 +44,39 @@
         
         <div class="carrito-container container row-cols-12">
             <h2 class="carrito-titulo">Tu carrito</h2>
-            <p class="carrito-vacio">- Agrega un producto a tu carrito.</p>
-            <div class="carrito-productos">
+            <p id="carrito-vacio" class="carrito-vacio">- Agrega un producto a tu carrito❗</p>
+            <div id="contenedor-carrito-productos" class="carrito-productos oculto">
 
                 <div class="carrito-producto">
-                    <img class="carrito-producto-imagen" src="../assets/img/taza.png" alt="">
-                    <div class="carrito-producto-titulo">
-                        <small>Producto</small>
-                        <h5>Taza de cerámica</h5>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carrito-producto-precio">
-                        <small>Precio</small>
-                        <p>$1000</p>
-                    </div>
-                    <button class="carrito-eliminar"><i class="bi bi-trash3"></i></button>
-                </div>
+                   
+                    <!--rellenado con js-->
 
-                <div class="carrito-producto">
-                    <img class="carrito-producto-imagen" src="../assets/img/vaso.png" alt="">
-                    <div class="carrito-producto-titulo">
-                        <small>Producto</small>
-                        <h5>Vaso térmico</h5>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carrito-producto-precio">
-                        <small>Precio</small>
-                        <p>$1300</p>
-                    </div>
-                    <button class="carrito-eliminar"><i class="bi bi-trash3"></i></button>
-
-                </div>
-
-                <div class="carrito-acciones">
-                    <div class="carrito-accion-izquierda">
-                        <button class="carrito-accion-vaciar">Vaciar carrito</button>
-                    </div>
-
-                    <div class="carrito-accion-derecha">
-                        <div class="carrito-accion-total">
-                            <p>Total:</p>
-                            <p id="total">$2300</p>
-                        </div>
-                        <button class="carrito-accion-comprar">Comprar</button>
-                    </div>
                 </div>
 
             </div>
+
+            <div id="carrito-acciones" class="carrito-acciones oculto">
+                    <div class="carrito-accion-izquierda">
+                        <button id="boton-vaciar" class="carrito-accion-vaciar">Vaciar carrito</button>
+                    </div>
+
+                    <div class="carrito-accion-derecha">
+                        <div id="carrito-accion-total" class="carrito-accion-total">
+                            <p>Total:</p>
+                            <p id="total"></p>
+                        </div>
+                        <div id="carrito-accion-total-iva" class="carrito-accion-total-iva">
+                            <p>Total con IVA:</p>
+                            <p id="iva"></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <button id="carrito-accion-comprar" class="carrito-accion-comprar">Comprar</button>
+
+                <p id="carrito-comprado" class="carrito-comprado oculto">- Tu compra ha sido un exito! ❤️</p>
+
         </div>
 
 
@@ -144,5 +124,8 @@
             </div>
         </section>
     </footer>
+
+    <script src="../scripts/carrito.js"></script>
+    
         
 </body>

@@ -1,18 +1,6 @@
 
 /*productos*/
 
-/* .carrito__contenido {
-    position: fixed;
-    width: 100%;
-    height: 0vh;
-    top: 100px;
-    background: #420000bc;
-    text-align: center;
-    transition: right .5s ease-in-out;
-    z-index: 3;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
-} */
-
 .carrito {
   display: flex;
   flex-direction: row;
@@ -40,11 +28,7 @@
   &__container {
     text-align: center;
     width: 300px;
-    margin: 50px;
-  }
-
-  &__espaciado {
-    margin-bottom: 100px;
+    margin: 90px;
   }
 
   &__container img {
@@ -81,14 +65,14 @@
   }
 }
 
+.footer-productos {
+  margin-top: 5rem;
+}
+
 @media (max-width: 720px) {
   .productos {
     &__container {
       margin: 20px;
-    }
-
-    &__espaciado--ultimo {
-      margin-bottom: 100px;
     }
   }
 }
