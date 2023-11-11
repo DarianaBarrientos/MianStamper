@@ -2,7 +2,7 @@
 let productos = [];
 
 const mockProductos = async () => {
-  const resp = await fetch('/mocks/productos.json')
+  const resp = await fetch('../mocks/productos.json')
   const data = await resp.json()
 
   productos = data;
