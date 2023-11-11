@@ -1,0 +1,34 @@
+[
+    { 
+      "id": "producto-01",
+      "nombre": "taza", 
+      "imagen": "../assets/img/taza.png",
+      "precio": 1000
+    },
+    { 
+      "id": "producto-02",
+      "nombre": "vaso", 
+      "imagen": "../assets/img/vaso.png",
+      "precio": 1300 
+    },
+    { "id": "producto-03",
+      "nombre": "copa",
+      "imagen": "../assets/img/copa.png",
+      "precio": 1500 
+    },
+    { "id": "producto-04",
+      "nombre": "gorra", 
+      "imagen": "../assets/img/gorra.png",
+      "precio": 2000 
+    },
+    { "id": "producto-05",
+      "nombre": "remera",
+      "imagen": "../assets/img/remera.png",
+      "precio": 3000 
+    },
+    { "id": "producto-06",
+      "nombre": "termo",
+      "imagen": "../assets/img/termo.png",
+      "precio": 2500 
+    }
+]

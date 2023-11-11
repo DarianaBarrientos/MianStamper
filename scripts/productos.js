@@ -1,40 +1,15 @@
-//compras (carrito)
-//sumar => los precios
 
-const productos = [
-  { 
-    id: 'producto-01',
-    nombre: 'taza', 
-    imagen: '../assets/img/taza.png',
-    precio: 1000 
-  },
-  { 
-    id: 'producto-02',
-    nombre: 'vaso', 
-    imagen: '../assets/img/vaso.png',
-    precio: 1300 
-  },
-  { id: 'producto-03',
-    nombre: 'copa',
-    imagen: '../assets/img/copa.png',
-    precio: 1500 
-  },
-  { id: 'producto-04',
-    nombre: 'gorra', 
-    imagen: '../assets/img/gorra.png',
-    precio: 2000 
-  },
-  { id: 'producto-05',
-    nombre: 'remera',
-    imagen: '../assets/img/remera.png',
-    precio: 3000 
-  },
-  { id: 'producto-06',
-    nombre: 'termo',
-    imagen: '../assets/img/termo.png',
-    precio: 2500 
-  },
-];
+let productos = [];
+
+const mockProductos = async () => {
+  const resp = await fetch('/mocks/productos.json')
+  const data = await resp.json()
+
+  productos = data;
+  cargarEstructuraProductos(productos);
+}
+
+mockProductos ();
 
 const contenedorProductos = document.querySelector('#contenedor-productos');
 let botonesAgregar = document.querySelectorAll('.productos__button');
@@ -67,10 +42,9 @@ function cargarEstructuraProductos () {
   })
 
   actualizarBotonesAgregar();
+  avisoProductoAgregado();
 
 }
-
-cargarEstructuraProductos();
 
 function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll('.productos__button');
@@ -80,14 +54,31 @@ function actualizarBotonesAgregar() {
   });
 }
 
-let carrito;
+function avisoProductoAgregado () {
+  botonesAgregar = document.querySelectorAll('.productos__button');
+
+  botonesAgregar.forEach(boton => {
+    boton.addEventListener('click', () => {
+
+      Toastify({
+        text: "Producto agregado!",
+        className: "aviso-agregado",
+        duration: 2000,
+        gravity: 'top',
+        position: 'left',
+        offset: {
+          x: '1em',
+          y: '7em' 
+        }
+      }).showToast();
+
+    });
+  });
+}
+
 let carritoLocalStorage = localStorage.getItem('productos-agregados');
 
-if (carritoLocalStorage) {
-  carrito = JSON.parse(carritoLocalStorage);
-} else {
-  carrito = [];
-}
+const carrito = JSON.parse(carritoLocalStorage) || [];
 
 function agregarAlCarrito(e) {
   

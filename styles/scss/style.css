@@ -306,6 +306,11 @@ h3 {
 /*mixins*/
 /*imports*/
 /*productos*/
+.aviso-agregado {
+  border-radius: 10px;
+  background: linear-gradient(to right, #420000, #ffc6c6);
+}
+
 .carrito {
   display: flex;
   flex-direction: row;
@@ -361,9 +366,9 @@ h3 {
   border-radius: 18px;
 }
 .productos__button:hover {
-  background-color: transparent;
+  background-color: rgba(255, 198, 198, 0.4784313725);
   color: #420000;
-  border: 1px solid #420000;
+  border: 0;
   transition: 0.5s;
 }
 

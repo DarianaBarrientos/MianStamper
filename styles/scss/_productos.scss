@@ -1,6 +1,11 @@
 
 /*productos*/
 
+.aviso-agregado {
+  border-radius: 10px;
+  background: linear-gradient(to right, #420000, #ffc6c6);
+}
+
 .carrito {
   display: flex;
   flex-direction: row;
@@ -57,9 +62,9 @@
     border-radius: 18px;
 
     &:hover {
-      background-color: transparent;
+      background-color: #ffc6c67a;
       color: $primary-color;
-      border: 1px solid $primary-color;
+      border: 0;
       transition: .5s;
     }
   }
