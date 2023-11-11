@@ -1,5 +1,9 @@
 let carrito = localStorage.getItem('productos-agregados');
-carrito = JSON.parse(carrito);
+
+document.addEventListener('DOMContentLoaded', () => {
+    carrito = JSON.parse(carrito) || [];
+    cargarProductosEnCarrito();
+})
 
 const contenedorCarritoVacio = document.querySelector('#carrito-vacio');
 const contenedorCarritoProductos = document.querySelector('#contenedor-carrito-productos');
@@ -69,8 +73,6 @@ function cargarProductosEnCarrito() {
     totalFinal();
     totalIva();
 }
-
-cargarProductosEnCarrito();
 
 
 function actualizarBotonesEliminar() {
