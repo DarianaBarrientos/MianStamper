@@ -69,7 +69,8 @@ function avisoProductoAgregado () {
         offset: {
           x: '1em',
           y: '7em' 
-        }
+        },
+        destination: '../pages/carrito.html'
       }).showToast();
 
     });

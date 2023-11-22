@@ -10,18 +10,15 @@ const contenedorCarritoProductos = document.querySelector('#contenedor-carrito-p
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
 const contenedorCarritoAccionComprar = document.querySelector('#carrito-accion-comprar')
 const contenedorCarritoComprado = document.querySelector('#carrito-comprado');
-let carritoEliminar = document.querySelectorAll('.carrito-eliminar');
 const botonVaciar = document.querySelector('#boton-vaciar');
-const contenedorCarritoTotal = document.querySelector('#carrito-accion-total');
 const botonComprar = document.querySelector('#carrito-accion-comprar');
-const contenedorCarritoTotalIva = document.querySelector('#carrito-accion-total-iva');
 
 const IVA = 1.21;
 let totalCalculado;
 
 function cargarProductosEnCarrito() {
 
-    if(carrito && carrito.length > 0) {
+    if(carrito.length > 0) {
     
     contenedorCarritoVacio.classList.add('oculto');
     contenedorCarritoProductos.classList.remove('oculto');
@@ -87,10 +84,14 @@ function actualizarBotonesEliminar() {
 function eliminarProducto(e) {
     const idBoton = e.currentTarget.id;
     const posicion = carrito.findIndex(producto => producto.id === idBoton);
-    carrito.splice(posicion, 1);
+
+    if(carrito[posicion].cantidad === 1){
+       carrito.splice(posicion, 1);
+    }else{
+       carrito[posicion].cantidad--;
+    }
 
     cargarProductosEnCarrito();
-
     localStorage.setItem('productos-agregados', JSON.stringify(carrito));
 }
 
