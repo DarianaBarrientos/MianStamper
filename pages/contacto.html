@@ -43,14 +43,18 @@
 
     <main>
         <section class="contactate">
-            <em>Contactate para personalizar tu pedido</em>
+            <em>Registrate para realizar tus pedidos</em>
         </section>
 
         <!--formulario-->
 
         <form class="formulario">
             <div class="formulario__nombre formulario__centro">
-                <input type="text" id="name" name="name" class="formulario__estilo" placeholder="nombre completo">
+                <input type="text" id="name" name="nombre" class="formulario__separado--estilo" placeholder="nombre">
+                <label for="prueba"></label>
+            </div>
+            <div class="formulario__apellido formulario__centro">
+                <input type="text" id="name" name="apellido" class="formulario__separado--estilo" placeholder="apellido">
                 <label for="prueba"></label>
             </div>
             <div class="formulario__email formulario__centro">
@@ -61,22 +65,17 @@
                 <input type="number" name="number" id="number" class="formulario__estilo" placeholder="teléfono">
                 <label for="number"></label>
             </div>
-            <div class="formulario__mensaje formulario__centro">
-                <textarea name="mensaje" id="mensaje" cols="20" rows="5" class="formulario__mensaje--estilo" placeholder="deja un mensaje"></textarea>
-                <label for="mensaje"></label>
-            </div>
-            <div class="formulario__fecha formulario__centro">
-                <input type="date" name="fecha" id="fecha" class="formulario__mensaje--estilo">
-                <label for="fecha"></label>
-            </div>
             <div class="formulario__pregunta formulario__centro">
-                <p>¿Haz hecho un pedido anteriormente?</p>
+                <p>¿Cuál será su forma de pago?</p>
 
                 <input type="radio" name="radio" id="si" value="si" class="radio">
-                <label for="si">si</label>
+                <label for="efectivo">efectivo</label>
 
                 <input type="radio" name="radio" id="no" value="no" class="radio">
-                <label for="no">no</label>
+                <label for="credito">crédito</label>
+
+                <input type="radio" name="radio" id="no" value="no" class="radio">
+                <label for="debito">débito</label>
             </div>
             <div class="formulario__button formulario__centro">
                 <button type="button" class="formulario__button__style">enviar</button>

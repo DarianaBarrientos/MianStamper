@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const contenedorCarritoVacio = document.querySelector('#carrito-vacio');
 const contenedorCarritoProductos = document.querySelector('#contenedor-carrito-productos');
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
-const contenedorCarritoAccionComprar = document.querySelector('#carrito-accion-comprar')
+const contenedorCarritoAccionComprar = document.querySelector('#carrito-realizar-compra')
 const contenedorCarritoComprado = document.querySelector('#carrito-comprado');
 const botonVaciar = document.querySelector('#boton-vaciar');
-const botonComprar = document.querySelector('#carrito-accion-comprar');
+/* const botonComprar = document.querySelector('#carrito-accion-comprar'); */
 
 const IVA = 1.21;
 let totalCalculado;
@@ -110,7 +110,7 @@ function totalFinal() {
     total.innerHTML = `$${totalCalculado}`;
 }
 
-botonComprar.addEventListener('click', comprarCarrito);
+/* botonComprar.addEventListener('click', comprarCarrito);
 function comprarCarrito() {
     carrito.length = 0;
     localStorage.setItem('productos-agregados', JSON.stringify(carrito));
@@ -120,7 +120,7 @@ function comprarCarrito() {
     contenedorCarritoAcciones.classList.add('oculto');
     contenedorCarritoAccionComprar.classList.add('oculto');
     contenedorCarritoComprado.classList.remove('oculto'); 
-}
+} */
 
 function totalIva() {
     const totalConIva = totalCalculado * IVA;
