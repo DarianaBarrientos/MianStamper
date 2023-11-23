@@ -31,7 +31,7 @@
         
             <ul class="nav-menu">
                 <li>
-                    <a class="btn-volver" href="../pages/productos.html">
+                    <a class="btn-volver" href="../pages/carrito.html">
                        Volver <i class="bi bi-caret-right"></i> 
                     </a>
                 </li>
@@ -40,46 +40,50 @@
         
     </header>
 
-    <main class="main-carrito">
+    <main class="main-realizarCompra">
+
+        <div class="realizarCompra-container">
+            <h2 class="compra-titulo">Registra tus datos para completar tu compra</h2>
         
-        <div class="carrito-container container row-cols-12">
-            <h2 class="carrito-titulo">Tu carrito</h2>
-            <p id="carrito-vacio" class="carrito-vacio">- Agrega un producto a tu carrito❗</p>
-            <div id="contenedor-carrito-productos" class="carrito-productos oculto">
-
-                <div class="carrito-producto">
-                   
-                    <!--rellenado con js-->
-
+            <form class="formulario">
+                <div class="formulario__nombre formulario__centro">
+                    <input type="text" id="name" name="nombre" class="formulario__separado--estilo" placeholder="nombre">
+                    <label for="prueba"></label>
                 </div>
-
-            </div>
-
-            <div id="carrito-acciones" class="carrito-acciones oculto">
-                    <div class="carrito-accion-izquierda">
-                        <button id="boton-vaciar" class="carrito-accion-vaciar">Vaciar carrito</button>
-                    </div>
-
-                    <div class="carrito-accion-derecha">
-                        <div id="carrito-accion-total" class="carrito-accion-total">
-                            <p>Total:</p>
-                            <p id="total"></p>
-                        </div>
-                        <div id="carrito-accion-total-iva" class="carrito-accion-total-iva">
-                            <p>Total con IVA:</p>
-                            <p id="iva"></p>
-                        </div>
-                        
-                    </div>
+                <div class="formulario__apellido formulario__centro">
+                    <input type="text" id="name" name="apellido" class="formulario__separado--estilo" placeholder="apellido">
+                    <label for="prueba"></label>
                 </div>
+                <div class="formulario__email formulario__centro">
+                    <input type="email" name="email" id="email" class="formulario__estilo" placeholder="email">
+                    <label for="email"></label>
+                </div>
+                <div class="formulario__numero formulario__centro">
+                    <input type="number" name="number" id="number" class="formulario__estilo" placeholder="teléfono">
+                    <label for="number"></label>
+                </div>
+                <div class="formulario__pregunta formulario__centro">
+                    <p>¿Cuál será su forma de pago?</p>
 
-                <a id="carrito-realizar-compra" class="carrito-realizar-compra" href="../pages/realizarCompra.html">Realizar compra</a>
+                    <input type="radio" name="radio" id="si" value="si" class="radio">
+                    <label for="efectivo">efectivo</label>
 
-                <p id="carrito-comprado" class="carrito-comprado oculto">- Tu compra ha sido un exito! ❤️</p>
+                    <input type="radio" name="radio" id="no" value="no" class="radio">
+                    <label for="credito">crédito</label>
+
+                    <input type="radio" name="radio" id="no" value="no" class="radio">
+                    <label for="debito">débito</label>
+                </div>
+                <div class="formulario__button formulario__centro">
+                    <button type="button" class="formulario__button__style">comprar</button>
+                </div>
+                
+            </form>
+
+            <p id="carrito-comprado" class="carrito-comprado oculto">- Tu compra ha sido un exito! ❤️</p>
 
         </div>
-
-
+    
     </main>
 
     <!--footer-->
@@ -127,6 +131,3 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../scripts/carrito.js"></script>
-    
-        
-</body>

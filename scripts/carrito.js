@@ -9,7 +9,7 @@ const contenedorCarritoVacio = document.querySelector('#carrito-vacio');
 const contenedorCarritoProductos = document.querySelector('#contenedor-carrito-productos');
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
 const contenedorCarritoAccionComprar = document.querySelector('#carrito-realizar-compra')
-const contenedorCarritoComprado = document.querySelector('#carrito-comprado');
+/* const contenedorCarritoComprado = document.querySelector('#carrito-comprado'); */
 const botonVaciar = document.querySelector('#boton-vaciar');
 /* const botonComprar = document.querySelector('#carrito-accion-comprar'); */
 
@@ -24,7 +24,7 @@ function cargarProductosEnCarrito() {
     contenedorCarritoProductos.classList.remove('oculto');
     contenedorCarritoAcciones.classList.remove('oculto');
     contenedorCarritoAccionComprar.classList.remove('oculto');
-    contenedorCarritoComprado.classList.add('oculto'); 
+    /* contenedorCarritoComprado.classList.add('oculto'); */ 
 
     contenedorCarritoProductos.innerHTML = '';
 
@@ -62,7 +62,7 @@ function cargarProductosEnCarrito() {
         contenedorCarritoProductos.classList.add('oculto');
         contenedorCarritoAcciones.classList.add('oculto');
         contenedorCarritoAccionComprar.classList.add('oculto');
-        contenedorCarritoComprado.classList.add('oculto'); 
+        /* contenedorCarritoComprado.classList.add('oculto'); */ 
 
     } 
 

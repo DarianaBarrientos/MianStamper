@@ -732,4 +732,21 @@ h3 {
 
 .oculto {
   display: none;
+}
+
+.main-realizarCompra {
+  background-color: rgba(255, 198, 198, 0.4784313725);
+  padding-top: 1rem;
+  min-height: 700px;
+}
+
+.realizarCompra-container {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.compra-titulo {
+  padding-top: 20px;
+  text-align: center;
+  padding-top: 3rem;
 }/*# sourceMappingURL=style.css.map */
