@@ -27,6 +27,19 @@
   width: 35px
 }
 
+.btn-registro {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  transform: translate(0px, 65px);
+  color: #ffc6c6;
+}
+
+.btn-registro-style {
+  width: 35px;
+}
+
 .productos {
   @include containers-row;
 

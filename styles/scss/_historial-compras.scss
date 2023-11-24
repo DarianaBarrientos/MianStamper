@@ -20,14 +20,26 @@
 
 .buscar-historial {
     width: 470px;
+    border-radius: 10px;
+    border: 2px solid #ffc6c67a;
+    padding: 2px;
+
+    &:hover {
+        border: 2px solid #420000bc;
+    }
 }
 
 .boton-historial {
     border: transparent;
-    background-color: #420000bc;
-    color: #ffffff;
+    background-color: #ffc6c67a;
+    color: #420000bc;
     padding: 3px;
     border-radius: 5px;
+
+    &:hover {
+        background-color: #420000bc;
+        color: white;
+    }
 }
 
 .tabla-historial {

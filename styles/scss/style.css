@@ -332,6 +332,19 @@ h3 {
   width: 35px;
 }
 
+.btn-registro {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  transform: translate(0px, 65px);
+  color: #ffc6c6;
+}
+
+.btn-registro-style {
+  width: 35px;
+}
+
 .productos {
   display: flex;
   flex-direction: row;
@@ -792,14 +805,24 @@ h3 {
 
 .buscar-historial {
   width: 470px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 198, 198, 0.4784313725);
+  padding: 2px;
+}
+.buscar-historial:hover {
+  border: 2px solid rgba(66, 0, 0, 0.737254902);
 }
 
 .boton-historial {
   border: transparent;
-  background-color: rgba(66, 0, 0, 0.737254902);
-  color: #ffffff;
+  background-color: rgba(255, 198, 198, 0.4784313725);
+  color: rgba(66, 0, 0, 0.737254902);
   padding: 3px;
   border-radius: 5px;
+}
+.boton-historial:hover {
+  background-color: rgba(66, 0, 0, 0.737254902);
+  color: white;
 }
 
 .tabla-historial {

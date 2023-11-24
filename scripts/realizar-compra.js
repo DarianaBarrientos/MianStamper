@@ -18,6 +18,7 @@ pagosRegistrados.addEventListener('submit', (e) => {
         
     if (registrarPagos(persona)) {
         pagosRegistrados.reset();
+        localStorage.removeItem('productos-agregados')
         window.location = "../pages/historial-compras.html";
     } else {
         Swal.fire({

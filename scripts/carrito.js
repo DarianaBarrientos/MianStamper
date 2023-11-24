@@ -9,9 +9,7 @@ const contenedorCarritoVacio = document.querySelector('#carrito-vacio');
 const contenedorCarritoProductos = document.querySelector('#contenedor-carrito-productos');
 const contenedorCarritoAcciones = document.querySelector('#carrito-acciones');
 const contenedorCarritoAccionComprar = document.querySelector('#carrito-realizar-compra')
-/* const contenedorCarritoComprado = document.querySelector('#carrito-comprado'); */
 const botonVaciar = document.querySelector('#boton-vaciar');
-/* const botonComprar = document.querySelector('#carrito-accion-comprar'); */
 
 const IVA = 1.21;
 let totalCalculado;
@@ -24,7 +22,6 @@ function cargarProductosEnCarrito() {
     contenedorCarritoProductos.classList.remove('oculto');
     contenedorCarritoAcciones.classList.remove('oculto');
     contenedorCarritoAccionComprar.classList.remove('oculto');
-    /* contenedorCarritoComprado.classList.add('oculto'); */ 
 
     contenedorCarritoProductos.innerHTML = '';
 
@@ -62,7 +59,6 @@ function cargarProductosEnCarrito() {
         contenedorCarritoProductos.classList.add('oculto');
         contenedorCarritoAcciones.classList.add('oculto');
         contenedorCarritoAccionComprar.classList.add('oculto');
-        /* contenedorCarritoComprado.classList.add('oculto'); */ 
 
     } 
 
@@ -78,7 +74,7 @@ function actualizarBotonesEliminar() {
     botonesEliminar.forEach(boton => {
       boton.addEventListener('click', eliminarProducto);
     });
-  }
+}
 
 
 function eliminarProducto(e) {
@@ -103,28 +99,13 @@ function vaciarCarrito() {
     cargarProductosEnCarrito();
 }
 
-
-
 function totalFinal() {
     totalCalculado = carrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     total.innerHTML = `$${totalCalculado}`;
 }
-
-/* botonComprar.addEventListener('click', comprarCarrito);
-function comprarCarrito() {
-    carrito.length = 0;
-    localStorage.setItem('productos-agregados', JSON.stringify(carrito));
-
-    contenedorCarritoVacio.classList.add('oculto');
-    contenedorCarritoProductos.classList.add('oculto');
-    contenedorCarritoAcciones.classList.add('oculto');
-    contenedorCarritoAccionComprar.classList.add('oculto');
-    contenedorCarritoComprado.classList.remove('oculto'); 
-} */
 
 function totalIva() {
     const totalConIva = totalCalculado * IVA;
     iva.innerHTML = `$${totalConIva}`;
     localStorage.setItem('total', JSON.stringify(totalConIva));
 }
-

@@ -2,7 +2,9 @@ let pagos = localStorage.getItem('registro-de-pagos');
 
 document.addEventListener('DOMContentLoaded', () => {
     pagos = JSON.parse(pagos) || [];
-})
+
+    mostrarTabla(pagos);
+});
 
 const buscador = document.querySelector('#buscar-historial');
 const botonHistorial = document.querySelector('#boton-historial');
@@ -30,10 +32,8 @@ function mostrarTabla (pagos = []) {
     
 };
 
-mostrarTabla();
 
-
-botonHistorial.addEventListener('click', cargarHistorial)
+botonHistorial.addEventListener('click', cargarHistorial);
 function cargarHistorial() { 
 
     const busqueda = buscador.value.trim().toLowerCase();
@@ -42,21 +42,4 @@ function cargarHistorial() {
     mostrarTabla(resultados);
 } 
 
-const filtroBusqueda = (busqueda = '', pagos = []) => {
-    return pagos.filter((pago) => {return pago.nombre.toLowerCase().includes(busqueda.toLowerCase())});
-}
-
-
-
-/*  const busqueda = buscador.value.trim().toLowerCase();
-    const filtroBusqueda = pagos.filter((pago) => pago.telefono.trim());
-    
-    filtroBusqueda.forEach(pago => {
-        const li = document.createElement('li');
-        li.classList.add('lista-historial');
-        li.innerText = filtroBusqueda;
-
-    filtroBusqueda.append(li);
-
-    }); */
-
+const filtroBusqueda = (busqueda = '', pagos = []) => pagos.filter((pago) => pago.nombre.toLowerCase().includes(busqueda.toLowerCase()));
