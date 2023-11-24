@@ -50,7 +50,7 @@ const pagos = JSON.parse(pagosLocalStorage) || [];
 
 const registrarPagos = (persona) => {
 
-    const { nombre, apellido, email, telefono, metodos } = persona;
+    
     const erroresDeCampo = validarRegistros(persona);
   
     let total = localStorage.getItem('total');
@@ -59,7 +59,10 @@ const registrarPagos = (persona) => {
       return false;
     };
 
-    let unPago = new Pagos (nombre.trim().toLowerCase(), apellido.trim().toLowerCase(), email.trim().toLowerCase(), telefono, metodos, total);
+    persona.total = total;
+    persona.fecha = new Date();
+    
+    let unPago = new Pagos (persona);
     pagos.push(unPago);
     localStorage.setItem('registro-de-pagos', JSON.stringify(pagos));
     return true;

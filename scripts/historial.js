@@ -11,6 +11,7 @@ let tablaHistorial = document.querySelector('#cuepo-tabla-historial');
 function mostrarTabla (pagos = []) {
     tablaHistorial.innerHTML = '';
     pagos.forEach((pago) => {
+        const fechaLimpia = conseguirFecha(pago.fecha)
         const tr = document.createElement('tr');
         tr.classList.add('tabla-historial-tr');
         tr.innerHTML = `
@@ -18,9 +19,9 @@ function mostrarTabla (pagos = []) {
         <th scope="col">${pago.apellido}</th>
         <th scope="col">${pago.email}</th>
         <th scope="col">${pago.telefono}</th>
-        <th scope="col">${pago.metodo}</th>
-        <th scope="col">${pago.total}</th>
-        <th scope="col">${pago.fecha}</th>
+        <th scope="col">${pago.metodos}</th>
+        <th scope="col">$${pago.total}</th>
+        <th scope="col">${fechaLimpia}</th>
         `;
 
         tablaHistorial.append(tr);
