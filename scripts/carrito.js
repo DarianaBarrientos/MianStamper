@@ -125,5 +125,6 @@ function comprarCarrito() {
 function totalIva() {
     const totalConIva = totalCalculado * IVA;
     iva.innerHTML = `$${totalConIva}`;
+    localStorage.setItem('total', JSON.stringify(totalConIva));
 }
 

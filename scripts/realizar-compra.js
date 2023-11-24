@@ -117,6 +117,8 @@ const validarRegistros = (persona) => {
 
 };
 
+
+
 let pagosLocalStorage = localStorage.getItem('registro-de-pagos');
 
 const pagos = JSON.parse(pagosLocalStorage) || [];
@@ -126,12 +128,13 @@ const registrarPagos = (persona) => {
     const { nombre, apellido, email, telefono, metodos } = persona;
     const erroresDeCampo = validarRegistros(persona);
   
+    let total = localStorage.getItem('total');
 
     if (!erroresDeCampo) {
       return false;
     };
 
-    let unPago = new Pagos (nombre, apellido, email, telefono, metodos);
+    let unPago = new Pagos (nombre, apellido, email, telefono, metodos, total);
     pagos.push(unPago);
     localStorage.setItem('registro-de-pagos', JSON.stringify(pagos));
     return true;
