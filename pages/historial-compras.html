@@ -31,8 +31,8 @@
         
             <ul class="nav-menu">
                 <li>
-                    <a class="btn-volver" href="../pages/carrito.html">
-                       Volver <i class="bi bi-caret-right"></i> 
+                    <a class="btn-volver" href="../pages/productos.html">
+                       Salir <i class="bi bi-caret-right"></i> 
                     </a>
                 </li>
             </ul>
@@ -40,46 +40,28 @@
         
     </header>
 
-    <main class="main-realizarCompra">
+    <main class="main-historial">
+        <h2>Historial de compras</h2>
 
-        <div class="realizarCompra-container">
-            <h2 class="compra-titulo">Registra tus datos para completar tu compra</h2>
-        
-            <form id="formulario" class="formulario">
-                <div id="formulario-compra-nombre" class="formulario__nombre formulario__centro">
-                    <input type="text" id="nombre" name="nombre" class="formulario__separado--estilo classForm" placeholder="nombre">
-                    <label for="nombre"></label>
-                </div>
-                <div id="formulario-compra-apellido" class="formulario__apellido formulario__centro">
-                    <input type="text" id="apellido" name="apellido" class="formulario__separado--estilo classForm" placeholder="apellido">
-                    <label for="apellido"></label>
-                </div>
-                <div id="formulario-compra-email" class="formulario__email formulario__centro">
-                    <input type="email" name="email" id="email" class="formulario__estilo classForm" placeholder="email">
-                    <label for="email"></label>
-                </div>
-                <div id="formulario-compra-telefono" class="formulario__numero formulario__centro">
-                    <input type="number" name="telefono" id="telefono" class="formulario__estilo classForm" placeholder="teléfono">
-                    <label for="telefono"></label>
-                </div>
-                <div id="formulario-compra-metodo" class="formulario__pregunta formulario__centro">
-                    <p>¿Cuál será su forma de pago?</p>
-                    <select name="metodos" id="metodos" class="metodos-pago">
-                        <option value="efectivo">efectivo</option>
-                        <option value="credito">crédito</option>
-                        <option value="debito" selected>débito</option>
-                    </select>
-                </div>
-                <div class="formulario__button formulario__centro">
-                    <button  id="formulario-compra-boton" type="submit" class="formulario__button__style">comprar</button>
-                </div>
-                
-            </form>
-
-            <p id="carrito-comprado" class="carrito-comprado oculto">- Tu compra ha sido un exito! ❤️</p>
-
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    
+        
     </main>
 
     <!--footer-->
@@ -125,9 +107,5 @@
         </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
-    <script src="../scripts/registro-pagos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../scripts/realizar-compra.js"></script>
 
 </body>

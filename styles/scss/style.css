@@ -749,4 +749,13 @@ h3 {
   padding-top: 20px;
   text-align: center;
   padding-top: 3rem;
+}
+
+.metodos-pago {
+  background-color: rgba(255, 198, 198, 0.4784313725);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(219, 170, 170, 0.4784313725);
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.612);
 }/*# sourceMappingURL=style.css.map */
