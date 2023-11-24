@@ -81,13 +81,21 @@ const pagosRegistrados = document.querySelector('#formulario');
 
 pagosRegistrados.addEventListener('submit', (e) => {
     e.preventDefault();
-    let nombre = document.getElementById("nombre").value.trim().toLowerCase();
-    let apellido = document.getElementById("apellido").value.trim().toLowerCase();
-    let email = document.getElementById("email").value.trim();
-    let telefono = document.getElementById("telefono").value.trim();
-    let metodos = document.getElementById("metodos").value
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const email = document.getElementById("email").value;
+    const telefono = document.getElementById("telefono").value;
+    const metodos = document.getElementById("metodos").value
+    const persona = {
+      nombre,
+      apellido,
+      email,
+      telefono,
+      metodos
+    };
+  
         
-    if (registrarPagos(nombre, apellido, email, telefono, metodos)) {
+    if (registrarPagos(persona)) {
         pagosRegistrados.reset();
         alert("Usuario registrado satisfactoriamente!");
         /* window.location = ""; */
@@ -97,51 +105,27 @@ pagosRegistrados.addEventListener('submit', (e) => {
         
 });
     
-const validarRegistros = (
-    nombre = "",
-    apellido = "",
-    email = "",
-    telefono = "",
-
-  ) => {
-    if (nombre.length == 0) {
-        alert("El Nombre de usuario es requerido.");
-        return false;
+const validarRegistros = (persona) => {
+    if (persona.length > 0) {
+        return true;
     }
-    if (apellido.length == 0) {
-        alert("Repetir apellido de usuario es requerido.");
-        return false;
-    }
-    if (email.length == 0) {
-        alert("Repetir email de usuario es requerido.");
-        return false;
-    }
-    if (telefono.length < 10) {
-        alert("Repetir telefono de usuario es requerido.");
-        return false;
+    if (persona.telefono.length >= 10) {
+        return true;
     }
 
-    return true;
+    return false;
+
 };
 
 let pagosLocalStorage = localStorage.getItem('registro-de-pagos');
 
 const pagos = JSON.parse(pagosLocalStorage) || [];
 
-const registrarPagos = (
-    nombre,
-    apellido,
-    email,
-    telefono,
-    metodos
-  ) => {
-    const erroresDeCampo = validarRegistros(
-      nombre,
-      apellido,
-      email,
-      telefono,
-      metodos
-    );
+const registrarPagos = (persona) => {
+
+    const { nombre, apellido, email, telefono, metodos } = persona;
+    const erroresDeCampo = validarRegistros(persona);
+  
 
     if (!erroresDeCampo) {
       return false;
