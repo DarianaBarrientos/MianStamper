@@ -1,3 +1,44 @@
 .main-historial {
-    height: 700px;
+    padding-bottom: 9rem;
+    padding-top: 1rem;
+    min-height: 700px;
+    background-color: #ffc6c67a;
+}
+
+.contenedor-historial {
+    background-color: white;  
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.busqueda-historial {
+    margin: 2rem 0;
+}
+
+.buscar-historial {
+    width: 470px;
+}
+
+.boton-historial {
+    border: transparent;
+    background-color: #420000bc;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.tabla-historial {
+    width: 900px;
+}
+
+.tabla-historial-encabezado{
+    color: #420000bc;
+}
+
+.tabla-historial-tr{
+    font-size: 12px;
+    color: #dc2f36;
 }
