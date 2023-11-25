@@ -1,12 +1,12 @@
 .main-realizarCompra {
     background-color: #ffc6c67a;
     padding-top: 1rem;
-    min-height: 700px;
 }
 
 .realizarCompra-container {
     background-color: white;  
-    border-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .compra-titulo {
@@ -27,9 +27,7 @@
     box-shadow: 0 0 5px 5px #dbaaaa7a;
     padding: 6px;
     color: rgba(0, 0, 0, 0.612);
-}
-
-.metodos-pago {
     text-align: center;
-    margin-left: 58px;
+    margin-left: 57.5px;
+    margin-bottom: 20px;
 }

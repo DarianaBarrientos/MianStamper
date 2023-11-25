@@ -94,9 +94,8 @@
     font-size: 20px;
     border: 0;
     width: 100px;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    height: 45px;
+    margin-top: 30px;
     border-radius: 15px;
     background: rgb(255,198,198);
     background: rgb(255,198,198);
@@ -104,8 +103,8 @@
     transition: all .3s;
 
     &:hover {
-      width: 125px;
-      height: 65px;
+      width: 120px;
+      height: 60px;
       font-size: 25px;
       background-image: none;
       color: $secondary-color;

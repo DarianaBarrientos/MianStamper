@@ -1,8 +1,10 @@
 .main-historial {
-    padding-bottom: 9rem;
-    padding-top: 1rem;
     min-height: 700px;
     background-color: #ffc6c67a;
+}
+
+.margin-top-footer {
+    margin-top: 0;
 }
 
 .contenedor-historial {
@@ -11,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 40px;
 }
 
 .busqueda-historial {
@@ -43,14 +45,26 @@
 }
 
 .tabla-historial {
-    width: 900px;
+    width: 800px;
+    border-collapse: collapse;
 }
 
 .tabla-historial-encabezado{
     color: #420000bc;
 }
 
-.tabla-historial-tr{
-    font-size: 12px;
+.tabla-historial-tr th{
+    font-size: 13px;
+    font-weight:400;
     color: #dc2f36;
+}
+
+th, td {
+  border: 2px solid rgb(255, 253, 253) ;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2a3;
 }
