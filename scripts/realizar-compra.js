@@ -31,6 +31,8 @@ pagosRegistrados.addEventListener('submit', (e) => {
     }
         
 });
+
+const avisoTelefono = document.querySelector('#tlf-incompleto')
     
 const validarRegistros = (persona) => {
     if (persona.length > 0) {
@@ -38,6 +40,8 @@ const validarRegistros = (persona) => {
     }
     if (persona.telefono.length >= 10) {
         return true;
+    }else {
+        avisoTelefono.classList.remove('oculto')
     }
 
     return false;
@@ -51,10 +55,9 @@ const pagos = JSON.parse(pagosLocalStorage) || [];
 
 const registrarPagos = (persona) => {
 
+    let total = localStorage.getItem('total');
     
     const erroresDeCampo = validarRegistros(persona);
-  
-    let total = localStorage.getItem('total');
 
     if (!erroresDeCampo) {
       return false;
