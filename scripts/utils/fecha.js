@@ -1,3 +1,5 @@
+//mejoramos el estilo de la fecha
+
 const conseguirFecha = (date) => {
     const newDate = new Date(date);
     const day = newDate.getDate();

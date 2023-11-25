@@ -1,5 +1,6 @@
 const pagosRegistrados = document.querySelector('#formulario');
 
+//utilizamos un evento para trer el valor de cada campo del form
 pagosRegistrados.addEventListener('submit', (e) => {
     e.preventDefault();
     const nombre = document.getElementById('nombre').value;
@@ -15,7 +16,7 @@ pagosRegistrados.addEventListener('submit', (e) => {
       metodos
     };
   
-        
+    //si hay datos validos se resetea la pagina y se envia a la siguiente pagina, sino manda un mensaje de error     
     if (registrarPagos(persona)) {
         pagosRegistrados.reset();
         localStorage.removeItem('productos-agregados')
@@ -33,7 +34,8 @@ pagosRegistrados.addEventListener('submit', (e) => {
 });
 
 const avisoTelefono = document.querySelector('#tlf-incompleto')
-    
+
+//validamos que los campos esten bien completados
 const validarRegistros = (persona) => {
     if (persona.length > 0) {
         return true;
@@ -48,11 +50,11 @@ const validarRegistros = (persona) => {
 
 };
 
-
 let pagosLocalStorage = localStorage.getItem('registro-de-pagos');
 
 const pagos = JSON.parse(pagosLocalStorage) || [];
 
+//cuando esté todo validado se guardaran los datos en el historial local y se sumaran al array de pagos
 const registrarPagos = (persona) => {
 
     let total = localStorage.getItem('total');
@@ -72,4 +74,3 @@ const registrarPagos = (persona) => {
     return true;
     
 };
-

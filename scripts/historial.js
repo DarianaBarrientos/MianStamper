@@ -1,17 +1,29 @@
+//traemos los datos del form guardados anteriormente
 let pagos = localStorage.getItem('registro-de-pagos');
 
+const tablaVaciaHistorial = document.querySelector('#tabla-historial');
+const parrafoHistorialVacio = document.querySelector('#parrafo-historial-vacio');
+
+//evento para que se cargue adecuandamente el DOM 
 document.addEventListener('DOMContentLoaded', () => {
     pagos = JSON.parse(pagos) || [];
 
-    mostrarTabla(pagos);
+    if(pagos.length > 0) {
+        mostrarTabla(pagos);
+    }else {
+        tablaVaciaHistorial.classList.add('oculto');
+        parrafoHistorialVacio.classList.remove('oculto')
+    }
+    
 });
 
 const buscador = document.querySelector('#buscar-historial');
-const tablaVaciaHistorial = document.querySelector('#tabla-historial');
 
+//evento para mostrar uno por uno los datos de pago mediante DOM
 let tablaHistorial = document.querySelector('#cuepo-tabla-historial');
 function mostrarTabla (pagos = []) {
     tablaHistorial.innerHTML = '';
+    
     pagos.forEach((pago) => {
         const fechaLimpia = conseguirFecha(pago.fecha)
         const tr = document.createElement('tr');
@@ -31,6 +43,7 @@ function mostrarTabla (pagos = []) {
 
 };
 
+//para mas eficiencia tambien colocamos un evento que escuche el teclado y al hacer enter traiga lo indicado 
 buscador.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') {
         e.preventDefault();
@@ -38,6 +51,7 @@ buscador.addEventListener('keypress', (e) => {
     }
 });
 
+//realizamos un filtro en el array de pagos para encontrar datos coincidentes y traer lo buscado
 const filtroBusqueda = (busqueda = '', pagos = []) => pagos.filter((pago) => pago.nombre.toLowerCase().includes(busqueda.toLowerCase()));
 
 function cargarHistorial() { 
@@ -46,4 +60,5 @@ function cargarHistorial() {
     const resultados = filtroBusqueda(busqueda, pagos);
 
     mostrarTabla(resultados);
+    tablaVaciaHistorial.classList.remove('oculto');
 } 

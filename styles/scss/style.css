@@ -833,7 +833,7 @@ h3 {
 }
 
 .tabla-historial {
-  width: 800px;
+  width: 900px;
   border-collapse: collapse;
 }
 
@@ -855,4 +855,8 @@ th, td {
 
 th {
   background-color: rgba(242, 242, 242, 0.6392156863);
+}
+
+.parrafo-historial-vacio {
+  color: #ffc6c6;
 }/*# sourceMappingURL=style.css.map */

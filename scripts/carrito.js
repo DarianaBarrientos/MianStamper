@@ -1,3 +1,4 @@
+//recuperamos los productos del historial 
 let carrito = localStorage.getItem('productos-agregados');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,8 +13,8 @@ const contenedorCarritoAccionComprar = document.querySelector('#carrito-realizar
 const botonVaciar = document.querySelector('#boton-vaciar');
 
 const IVA = 1.21;
-let totalCalculado;
 
+//si hay productos en el historial cargamos la estructura correspondiente a cada uno, sino mostramos mensaje de aviso
 function cargarProductosEnCarrito() {
 
     if(carrito.length > 0) {
@@ -76,7 +77,7 @@ function actualizarBotonesEliminar() {
     });
 }
 
-
+//damos la funcionalidad de eliminar los productos uno por uno mediante su id
 function eliminarProducto(e) {
     const idBoton = e.currentTarget.id;
     const posicion = carrito.findIndex(producto => producto.id === idBoton);
@@ -91,7 +92,7 @@ function eliminarProducto(e) {
     localStorage.setItem('productos-agregados', JSON.stringify(carrito));
 }
 
-
+//utilizamos un evento para vaciar el carrito dejando el array sin elementos
 botonVaciar.addEventListener('click', vaciarCarrito);
 function vaciarCarrito() {
     carrito.length = 0;
@@ -99,6 +100,7 @@ function vaciarCarrito() {
     cargarProductosEnCarrito();
 }
 
+//sacamos el precio total sin y con impuestos y agregamos al html
 function totalFinal() {
     totalCalculado = carrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     total.innerHTML = `$${totalCalculado}`;

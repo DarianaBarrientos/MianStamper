@@ -45,7 +45,7 @@
 }
 
 .tabla-historial {
-    width: 800px;
+    width: 900px;
     border-collapse: collapse;
 }
 
@@ -67,4 +67,8 @@ th, td {
 
 th {
   background-color: #f2f2f2a3;
+}
+
+.parrafo-historial-vacio {
+    color: #ffc6c6;
 }

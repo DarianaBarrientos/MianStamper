@@ -1,6 +1,7 @@
 
 let productos = [];
 
+//se traen los productos de mocks y se cargan en la pagina
 const mockProductos = async () => {
   const resp = await fetch('../mocks/productos.json')
   const data = await resp.json()
@@ -14,6 +15,7 @@ mockProductos ();
 const contenedorProductos = document.querySelector('#contenedor-productos');
 let botonesAgregar = document.querySelectorAll('.productos__button');
 
+//realizamos una funcion para crear la estructura de los productos por cada elemento para mejor manipulacion
 function cargarEstructuraProductos () {
 
   productos.forEach(producto => {
@@ -46,6 +48,7 @@ function cargarEstructuraProductos () {
 
 }
 
+//evento para que cada boton lleve un producto al carrito
 function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll('.productos__button');
 
@@ -54,6 +57,7 @@ function actualizarBotonesAgregar() {
   });
 }
 
+//mediante cada boton avisamos que se ha agregado un producto exitosamente con el uso de una libreria
 function avisoProductoAgregado () {
   botonesAgregar = document.querySelectorAll('.productos__button');
 
@@ -81,6 +85,7 @@ let carritoLocalStorage = localStorage.getItem('productos-agregados');
 
 const carrito = JSON.parse(carritoLocalStorage) || [];
 
+//agregamos cada producto al carrito mediante su id y guardamos en el historial local
 function agregarAlCarrito(e) {
   
   const idBoton = e.target.id;
