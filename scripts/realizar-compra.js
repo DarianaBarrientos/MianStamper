@@ -2,11 +2,11 @@ const pagosRegistrados = document.querySelector('#formulario');
 
 pagosRegistrados.addEventListener('submit', (e) => {
     e.preventDefault();
-    const nombre = document.getElementById("nombre").value;
-    const apellido = document.getElementById("apellido").value;
-    const email = document.getElementById("email").value;
-    const telefono = document.getElementById("telefono").value;
-    const metodos = document.getElementById("metodos").value
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const metodos = document.getElementById('metodos').value
     const persona = {
       nombre,
       apellido,
@@ -19,7 +19,7 @@ pagosRegistrados.addEventListener('submit', (e) => {
     if (registrarPagos(persona)) {
         pagosRegistrados.reset();
         localStorage.removeItem('productos-agregados')
-        window.location = "../pages/historial-compras.html";
+        window.location = '../pages/historial-compras.html';
     } else {
         Swal.fire({
             title: 'Error!',
@@ -41,7 +41,7 @@ const validarRegistros = (persona) => {
     if (persona.telefono.length >= 10) {
         return true;
     }else {
-        avisoTelefono.classList.remove('oculto')
+        avisoTelefono.classList.remove('oculto');
     }
 
     return false;
