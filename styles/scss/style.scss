@@ -382,6 +382,15 @@ h3 {
   justify-content: center;
 }
 
+@mixin contacto-estilo {
+  background-color: #ffc6c67a;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #dbaaaa7a;
+  padding: 20px;
+  color: $primary-color;
+}
+
 /*imports*/
 
 @import "productos";

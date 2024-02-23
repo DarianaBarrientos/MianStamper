@@ -356,7 +356,7 @@ h3 {
 }
 .productos__container {
   text-align: center;
-  width: 300px;
+  width: 350px;
   margin: 90px;
   margin-top: 0;
 }
@@ -527,7 +527,7 @@ h3 {
 }
 .formulario {
   display: grid;
-  grid-template-areas: "nombre apellido" "email email" "numero numero" "pregunta pregunta" "boton boton";
+  grid-template-areas: "nombre nombre" "email email" "numero numero" "mensaje fecha" "mensaje pregunta" "boton boton";
   grid-template-columns: 300px 300px;
   row-gap: 30px;
   margin: 80px 0;
@@ -544,31 +544,37 @@ h3 {
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(219, 170, 170, 0.4784313725);
+  padding: 20px;
   color: #420000;
 }
-.formulario__separado--estilo {
+.formulario__mensaje--estilo {
   width: 195px;
   padding: 12px;
   background-color: rgba(255, 198, 198, 0.4784313725);
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(219, 170, 170, 0.4784313725);
+  padding: 20px;
   color: #420000;
 }
 .formulario__pregunta {
   color: #420000;
+  text-align: center;
 }
 .formulario__nombre {
   grid-area: nombre;
-}
-.formulario__apellido {
-  grid-area: apellido;
 }
 .formulario__email {
   grid-area: email;
 }
 .formulario__numero {
   grid-area: numero;
+}
+.formulario__mensaje {
+  grid-area: mensaje;
+}
+.formulario__fecha {
+  grid-area: fecha;
 }
 .formulario__pregunta {
   grid-area: pregunta;
@@ -750,6 +756,48 @@ h3 {
   display: none;
 }
 
+.formulario-compra {
+  display: grid;
+  grid-template-areas: "nombre apellido" "email email" "numero numero" "pregunta pregunta" "boton boton";
+  grid-template-columns: 300px 300px;
+  row-gap: 30px;
+  margin: 80px 0;
+  justify-content: center;
+}
+.formulario-compra__separado--estilo {
+  width: 200px;
+  height: 40px;
+  padding: 20px;
+  background-color: rgba(255, 198, 198, 0.4784313725);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(219, 170, 170, 0.4784313725);
+  padding: 20px;
+  color: #420000;
+}
+.formulario-compra__pregunta {
+  color: #420000;
+  text-align: center;
+}
+.formulario-compra__nombre {
+  grid-area: nombre;
+}
+.formulario-compra__apellido {
+  grid-area: apellido;
+}
+.formulario-compra__email {
+  grid-area: email;
+}
+.formulario-compra__numero {
+  grid-area: numero;
+}
+.formulario-compra__pregunta {
+  grid-area: pregunta;
+}
+.formulario-compra__button {
+  grid-area: boton;
+}
+
 .main-realizarCompra {
   background-color: rgba(255, 198, 198, 0.4784313725);
   padding-top: 1rem;
@@ -780,7 +828,6 @@ h3 {
   padding: 6px;
   color: rgba(0, 0, 0, 0.612);
   text-align: center;
-  margin-left: 57.5px;
   margin-bottom: 20px;
 }
 

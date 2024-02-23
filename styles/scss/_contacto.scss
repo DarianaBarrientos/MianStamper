@@ -23,10 +23,11 @@
 .formulario {
   display: grid;
   grid-template-areas: 
-  "nombre apellido" 
+  "nombre nombre" 
   "email email" 
   "numero numero" 
-  "pregunta pregunta" 
+  "mensaje fecha" 
+  "mensaje pregunta" 
   "boton boton";
   grid-template-columns: 300px 300px;
   row-gap: 30px;
@@ -37,15 +38,6 @@
     justify-self: center;
   }
 
-  @mixin contacto-estilo {
-    background-color: #ffc6c67a;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px #dbaaaa7a;
-    
-    color: $primary-color;
-  }
-
   &__estilo {
     width: 500px;
     height: 40px;
@@ -53,7 +45,7 @@
     @include contacto-estilo;
   }
 
-  &__separado--estilo {
+  &__mensaje--estilo {
     width: 195px;
     padding: 12px;
     @include contacto-estilo;
@@ -61,14 +53,11 @@
 
   &__pregunta {
     color: $primary-color;
+    text-align: center;
   }
 
   &__nombre {
     grid-area: nombre;
-  }
-
-  &__apellido {
-    grid-area: apellido;
   }
 
   &__email {
@@ -77,6 +66,14 @@
 
   &__numero {
     grid-area: numero;
+  }
+
+  &__mensaje {
+    grid-area: mensaje;
+  }
+
+  &__fecha {
+    grid-area: fecha;
   }
 
   &__pregunta {

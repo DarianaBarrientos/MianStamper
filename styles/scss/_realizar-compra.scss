@@ -1,3 +1,53 @@
+.formulario-compra {
+  display: grid;
+  grid-template-areas: 
+  "nombre apellido" 
+  "email email" 
+  "numero numero"
+  "pregunta pregunta" 
+  "boton boton";
+  grid-template-columns: 300px 300px;
+  row-gap: 30px;
+  margin: 80px 0;
+  justify-content: center;
+
+  &__separado--estilo {
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    @include contacto-estilo;
+  }
+
+  &__pregunta {
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__nombre {
+    grid-area: nombre;
+  }
+
+  &__apellido {
+    grid-area: apellido;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__numero {
+    grid-area: numero;
+  }
+
+  &__pregunta {
+    grid-area: pregunta;
+  }
+
+  &__button {
+    grid-area: boton;
+  }
+}
+
 .main-realizarCompra {
     background-color: #ffc6c67a;
     padding-top: 1rem;
@@ -28,7 +78,6 @@
     padding: 6px;
     color: rgba(0, 0, 0, 0.612);
     text-align: center;
-    margin-left: 57.5px;
     margin-bottom: 20px;
 }
 
