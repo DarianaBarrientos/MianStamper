@@ -1,6 +1,6 @@
 # Project Title
 
-Proyecto Final - Barrientos
+Proyecto Final - 
 Curso de Javascript
 
 ## Authors
